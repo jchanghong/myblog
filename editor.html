@@ -21,8 +21,7 @@
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,9 +29,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <script src='vendor/tinymce/tinymce.min.js'></script>
-    <script>
+     <script src='vendor/tinymce/tinymce.min.js'></script>
+  <script>
   tinymce.init({
     selector: '#mytextarea'
   });
@@ -63,9 +61,8 @@
                     <li>
                         <a href="about.html">关于</a>
                     </li>
-                   
                     <li>
-                        <a href="contact.html">联系</a>
+                        <a href="contact.html">联系我</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +77,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
+                    <div class="site-heading">
+                        <h1>我的日记本</h1>
+                        <hr class="small">
+                        <span class="subheading">一个coder的学习过程</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -90,8 +91,33 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <form method="post">
-                    <textarea id="mytextarea">Hello, World!</textarea>
+                <h1>编辑日志</h1>
+                <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+                <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+                <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+                <form name="editform" id="editform" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>标题</label>
+                            <input type="text" class="form-control" placeholder="请输入标题" id="title" required data-validation-required-message="输入标题.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                      <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group1 controls1">
+                            <label>内容</label>
+                            <textarea id="mytextarea">开始写了</textarea>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button type="submit" class="btn btn-default">完成</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -104,6 +130,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
                     <p class="copyright text-muted">Copyright &copy; changhong 2016</p>
                 </div>
             </div>
