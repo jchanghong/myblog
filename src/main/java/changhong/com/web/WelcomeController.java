@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class WelcomeController {
 
-	@RequestMapping("/")
+	@RequestMapping("/22gggggff")
 	public String welcome() {
 		System.out.println("hello");
-		return "editor";
+		return "controller";
 	}
 
 	@ResponseBody
-	@RequestMapping("/ss")
+	@RequestMapping("/22ss")
 	public WelcomeController welcome1() {
 		return this;
 	}
