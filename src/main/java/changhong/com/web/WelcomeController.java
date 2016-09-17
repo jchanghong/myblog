@@ -2,6 +2,7 @@ package changhong.com.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class WelcomeController {
@@ -9,11 +10,12 @@ public class WelcomeController {
 	@RequestMapping("/")
 	public String welcome() {
 		System.out.println("hello");
-		return "welcome";
+		return "editor";
 	}
 
-	// @RequestMapping("/index.html")
-	public String welcome1() {
-		return "index";
+	@ResponseBody
+	@RequestMapping("/ss")
+	public WelcomeController welcome1() {
+		return this;
 	}
 }
