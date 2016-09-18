@@ -36,6 +36,8 @@ configurations {
 }
 
 dependencies {
+   // compile files('libs/a.jar', 'libs/b.jar')
+    compile fileTree(dir: 'src/lib', include: '*.jar')
 	compile('org.springframework.boot:spring-boot-starter-aop')
 	compile('org.springframework.boot:spring-boot-starter-cache')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
