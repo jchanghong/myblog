@@ -640,9 +640,4 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry path="C:/Users/长宏/git/myblog/src/lib/ueditor-1.1.2.jar" kind="lib">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
 </classpath>
