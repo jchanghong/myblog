@@ -25,37 +25,12 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jersey/1.4.0.RELEASE/82e42fe1b37b23a44097e31e23b256c740bdd55a/spring-boot-starter-jersey-1.4.0.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jersey/1.4.0.RELEASE/26c88f71cdfa62538d1698c757e70c087fdefa41/spring-boot-starter-jersey-1.4.0.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-mail/1.4.0.RELEASE/f001142ee209b29617db074b679792aa08605c3c/spring-boot-starter-mail-1.4.0.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-mail/1.4.0.RELEASE/39325e71a759c7f5eafd9f1d837f8334d5f0bb32/spring-boot-starter-mail-1.4.0.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/1.4.0.RELEASE/5109b4ded64b8ae97779a977738cb1e3ae23b9d1/spring-boot-starter-security-1.4.0.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/1.4.0.RELEASE/91f9400d760dcae74194271202a1b8c7b7b9efc1/spring-boot-starter-security-1.4.0.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
 	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/1.4.0.RELEASE/9ef25340df97c018955bb8750965c360a615fa6b/spring-boot-starter-validation-1.4.0.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-validation/1.4.0.RELEASE/50819bcdc88a2b971e25a0c65a7b3927d44bad26/spring-boot-starter-validation-1.4.0.RELEASE-sources.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
 	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.4.0.RELEASE/bcefa854b75a7e0bcf612bfbe030bdcb05c9da82/spring-boot-starter-web-1.4.0.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/1.4.0.RELEASE/4d23db84cac2cfde92b38cf85c1d721fae19bdd5/spring-boot-starter-web-1.4.0.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web-services/1.4.0.RELEASE/49dbd811570710b1737b7a6de437d02b7583304e/spring-boot-starter-web-services-1.4.0.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web-services/1.4.0.RELEASE/81bfd8c42beb916ea9de724d3f13baeb35192066/spring-boot-starter-web-services-1.4.0.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-websocket/1.4.0.RELEASE/ed02dc6fc0fc41f6420f639774fd7fa379f4a63b/spring-boot-starter-websocket-1.4.0.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-websocket/1.4.0.RELEASE/3f0ee9551d323b013d8b7d2b8d4684461f73c1df/spring-boot-starter-websocket-1.4.0.RELEASE-sources.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
@@ -71,11 +46,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.4.0.RELEASE/9f3530cbc1998b9aeebd0a5c070f5d4f24357610/spring-boot-starter-tomcat-1.4.0.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/1.4.0.RELEASE/dbdef4e075c33c594054de58460d15a711744bfc/spring-boot-starter-tomcat-1.4.0.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.hsqldb/hsqldb/2.3.3/d12d506194447dffb8a2b05dd2c50b0cdd73d9d1/hsqldb-2.3.3.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.hsqldb/hsqldb/2.3.3/e61c74aec589c7227c5871387a3da92ea556fa0d/hsqldb-2.3.3-sources.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
@@ -155,61 +125,6 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.1/c04eb2cc599cd1742889bfa7cc41878db0d152f5/jackson-databind-2.8.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.1/a092a9ab43476c8f8073c0b7f55ffb030d845207/jackson-databind-2.8.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.2.RELEASE/562b3b775b6e8e7113b5d23b21946f939658bd19/spring-web-4.3.2.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.2.RELEASE/f0e4e72a7af722a285dc46cff641f058a46071db/spring-web-4.3.2.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.23.1/df5ac2b99fb0c621db6b004d53d4a94cd62d643c/jersey-server-2.23.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-server/2.23.1/21a57a219be247750d4ae0a8d55bd310c2400bc2/jersey-server-2.23.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.23.1/b1c4b97924386c482daa64357a1f8cc4809552b7/jersey-container-servlet-core-2.23.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet-core/2.23.1/d1e10de2b8f74589ee038cd3daec66c529bfae58/jersey-container-servlet-core-2.23.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet/2.23.1/c32b1d25201b5cae22b640a977887d0075c7c796/jersey-container-servlet-2.23.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.containers/jersey-container-servlet/2.23.1/cbb84582f80f4a29a516e89a53fd72c7eacc4a29/jersey-container-servlet-2.23.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-bean-validation/2.23.1/a41ebe382869ab89999e971ea5d257ef740f049f/jersey-bean-validation-2.23.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-bean-validation/2.23.1/c22ec06bcfc174df4b3827e3e02f8ee9c6fdaa1e/jersey-bean-validation-2.23.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-spring3/2.23.1/76c5443c11a99d0102e732ad5b04fa840c1eb0d1/jersey-spring3-2.23.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-spring3/2.23.1/76b6b2abda8fa38c96ed2b1e445168bc0138a8c1/jersey-spring3-2.23.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/2.23.1/7276c2b694803723715cd653401804e9dfa0662b/jersey-media-json-jackson-2.23.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-json-jackson/2.23.1/b4cee322e7b2536a436065681ab7fd0d8b889ee9/jersey-media-json-jackson-2.23.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.sun.mail/javax.mail/1.5.5/ffcd34b5de820f35bcc9303649cf6ab2c65ad44e/javax.mail-1.5.5.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.sun.mail/javax.mail/1.5.5/aff1ee409e0e496386e95cd6b440ebdacb41fb72/javax.mail-1.5.5-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.1.1.RELEASE/3616b49db81527d69d2bf3d9ad6b0fa899d1080d/spring-security-config-4.1.1.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/4.1.1.RELEASE/ab09792d0f493aeb23fef729760cd6210c6ea02a/spring-security-config-4.1.1.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.1.1.RELEASE/b4c912edc0c437f24e96db587848d856605734e2/spring-security-web-4.1.1.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/4.1.1.RELEASE/f2b5b61fca1ba09f3639709b28b59b6211aa4c17/spring-security-web-4.1.1.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
 	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.5.4/2d53f2e3b6b456cb7ac82e1549a944db7f5b05bf/tomcat-embed-el-8.5.4.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/8.5.4/ffd6340a37427eb1dcb7abdd8719dcf09cfc389b/tomcat-embed-el-8.5.4-sources.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
@@ -220,27 +135,17 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
+	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.1/c04eb2cc599cd1742889bfa7cc41878db0d152f5/jackson-databind-2.8.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.1/a092a9ab43476c8f8073c0b7f55ffb030d845207/jackson-databind-2.8.1-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.2.RELEASE/562b3b775b6e8e7113b5d23b21946f939658bd19/spring-web-4.3.2.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.2.RELEASE/f0e4e72a7af722a285dc46cff641f058a46071db/spring-web-4.3.2.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
 	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.2.RELEASE/99b68a8aca2ed67ad523e7341a90dd1c90fd669e/spring-webmvc-4.3.2.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.2.RELEASE/aca3ae146872101026f1b43463ab7f12a6893358/spring-webmvc-4.3.2.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-oxm/4.3.2.RELEASE/29eaf3acb0baacf66c67e536da424e7a11fb5de8/spring-oxm-4.3.2.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-oxm/4.3.2.RELEASE/6ef13c8cb6088ed9771409ac824a885a313139cc/spring-oxm-4.3.2.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-ws-core/2.3.0.RELEASE/7337a9e6cb5869d71a49b04c188a2f97320dee08/spring-ws-core-2.3.0.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-ws-core/2.3.0.RELEASE/11d990d35b82bbf57dddcace7409f4cae97fec80/spring-ws-core-2.3.0.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.3.2.RELEASE/7937cb22226ac70526f2c376d2f976403d99ddae/spring-messaging-4.3.2.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.3.2.RELEASE/34dc95f34f7fc78cbe71fa3c1af8b3490d7ffe84/spring-messaging-4.3.2.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/4.3.2.RELEASE/68ce42db2f886df42995b3dd8cebab40223603c7/spring-websocket-4.3.2.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework/spring-websocket/4.3.2.RELEASE/bb9ffdb35c004e63f7a73c7de27840aca7470e0f/spring-websocket-4.3.2.RELEASE-sources.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
@@ -410,92 +315,7 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.1/4465fda9834ab27eac2a76f9a378738d15a9b4fa/jackson-annotations-2.8.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.1/945d07a0f487c44bd1230c736d3ee5f97336f03c/jackson-annotations-2.8.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.1/fd13b1c033741d48291315c6370f7d475a42dccf/jackson-core-2.8.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.1/efcd4976d0d52d1ab9a4f4f40f727ed518d6070c/jackson-core-2.8.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.23.1/c005266f2291703324c16e67eee654193ddc42b6/jersey-common-2.23.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-common/2.23.1/70c4551ed8eb50560c5d952aeb7ac8e79005514e/jersey-common-2.23.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.23.1/c985d8c0ea1e704dcb2645f3de86d64b5d4902ab/jersey-client-2.23.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.core/jersey-client/2.23.1/f2ac0d7c2d759ed1eac5845a82b1261fad8349f0/jersey-client-2.23.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.0.1/104e9c2b5583cfcfeac0402316221648d6d8ea6b/javax.ws.rs-api-2.0.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/javax.ws.rs/javax.ws.rs-api/2.0.1/a20db7429fd8dfff74335ec867472b71c345049b/javax.ws.rs-api-2.0.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.23.1/81d5b5981e77276231f3362d112048c31016533/jersey-media-jaxb-2.23.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.media/jersey-media-jaxb/2.23.1/c437c15114b570232aa520c5eb6286250363af62/jersey-media-jaxb-2.23.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/ad18a02db08eaee697f812e333f692fc51129e4a/javax.annotation-api-1.2-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.4.0-b34/1017432e219dbd1d4a1121b2d7e87c5b2f0bcfb9/hk2-api-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-api/2.4.0-b34/97dc4ce8d908a948f35a5ef67e1e1cc1dbe3459b/hk2-api-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/javax.inject/2.4.0-b34/a6a3d4935af7b03e44126b5aac2c2a0ce98fe6e9/javax.inject-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/javax.inject/2.4.0-b34/785c39e9ed81111cf109665d6f635af1ca58fd71/javax.inject-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.4.0-b34/1451fc3e5b7f00d7a5ca0feaff2c1bf68be5ac91/hk2-locator-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-locator/2.4.0-b34/668f1f61ed8d42e1dde22d2069b3ae187c58b16e/hk2-locator-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
 	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.4.0-b34/736b03ef09a6f501b33a3d4c642cc3b2a3a54d66/hk2-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2/2.4.0-b34/442181dce6df52e113b2d52d749333f9a6450f75/hk2-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/spring-bridge/2.4.0-b34/4a3de367797146f2c5494c25fb1f41b275c57f67/spring-bridge-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/spring-bridge/2.4.0-b34/cb600c848bc3c45b76a770fcbc73b5f2333df369/spring-bridge-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/2.23.1/c82b46243e6bec2f798ae1f16ae3a82548687e3e/jersey-entity-filtering-2.23.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.ext/jersey-entity-filtering/2.23.1/b7e9a71cee900a66edb11bc5d8b5311b1141578d/jersey-entity-filtering-2.23.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.8.1/54027efa3986541d4f87e8e6b85b6362072e2656/jackson-jaxrs-base-2.8.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.8.1/56c633553350bc6e8a76dd435a21761681236fde/jackson-jaxrs-base-2.8.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.8.1/ebad11b6745b94e40071be23301d48ce6e7ff776/jackson-jaxrs-json-provider-2.8.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/2.8.1/7f1cd8e25f7baa626f43108fca426fa2380c7560/jackson-jaxrs-json-provider-2.8.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/e6cb541461c2834bdea3eb920f1884d1eb508b50/activation-1.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/javax.activation/activation/1.1/3697e9f67a2ed7ac5f589cff30f21173299440/activation-1.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.1.1.RELEASE/238b789b01ebfe20944bd5e011f548f2f2319844/spring-security-core-4.1.1.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/4.1.1.RELEASE/ed58e71426277255222978d7586f4109d18c9ac0/spring-security-core-4.1.1.RELEASE-sources.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
@@ -505,7 +325,12 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-xml/2.3.0.RELEASE/52dae008d93df5aea6042d5b3db1f3b56a185020/spring-xml-2.3.0.RELEASE.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-xml/2.3.0.RELEASE/da409ec2e3de39e50bfbbdf51099ba6e518b9893/spring-xml-2.3.0.RELEASE-sources.jar">
+	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.1/4465fda9834ab27eac2a76f9a378738d15a9b4fa/jackson-annotations-2.8.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.1/945d07a0f487c44bd1230c736d3ee5f97336f03c/jackson-annotations-2.8.1-sources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.1/fd13b1c033741d48291315c6370f7d475a42dccf/jackson-core-2.8.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.1/efcd4976d0d52d1ab9a4f4f40f727ed518d6070c/jackson-core-2.8.1-sources.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
@@ -550,67 +375,12 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.bundles.repackaged/jersey-guava/2.23.1/4596e4b19ea1a3249d86ea2d01f71c64d2d943f1/jersey-guava-2.23.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.jersey.bundles.repackaged/jersey-guava/2.23.1/ae027ceffcde4a79d3d210c24758affe27900c36/jersey-guava-2.23.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.1/4ed2b2d4738aed5786cfa64cba5a332779c4c708/osgi-resource-locator-1.0.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/osgi-resource-locator/1.0.1/b5685f8eaa7d83351b185a82a92abcd1b8b87fc8/osgi-resource-locator-1.0.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.4.0-b34/aacce18411fffef9621d8fc91464ca0477119c38/hk2-utils-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-utils/2.4.0-b34/a7b78d3bcc34b4aad3d63dc6575007d35df5fd88/hk2-utils-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.4.0-b34/3d5e856dbc91a3a2b0bcb3a3424f8b62421ae4cf/aopalliance-repackaged-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/aopalliance-repackaged/2.4.0-b34/cca0345c03644f636c838444207372f9c56b97b3/aopalliance-repackaged-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/config-types/2.4.0-b34/d0cd228facafb3f9912f25a1c6605c9738dacce2/config-types-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/config-types/2.4.0-b34/ad15a74eb97f0fc3ca194a03e62387524f751364/config-types-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-core/2.4.0-b34/d530f72aa485ff7d8f59a6c10ad4c396428fe90a/hk2-core-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-core/2.4.0-b34/e1c784070edfdd702fe0a069863441aadd74e052/hk2-core-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-config/2.4.0-b34/c1e9e66e284a777b1b51e19d902db36b0b499bf/hk2-config-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-config/2.4.0-b34/5675af21a30791e6d1e06784a54e6bafa23e8ce/hk2-config-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-runlevel/2.4.0-b34/c77ffbd2bcae37434dcab3624b307a95374500d1/hk2-runlevel-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/hk2-runlevel/2.4.0-b34/742a39f7f9a9aa63fab5b270a2cdad82062fd9b4/hk2-runlevel-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/class-model/2.4.0-b34/fdb9192396480cb5a828eb2f21f348600bc40758/class-model-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2/class-model/2.4.0-b34/8229fcfed608fc4c8159fdfc7eadbf5b2219cd94/class-model-2.4.0-b34-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.8.1/f5695ed00b367b355a652709d2dac97a02265687/jackson-module-jaxb-annotations-2.8.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.8.1/540530bf7455e6a227c6f48c91a2f2749dbc0aba/jackson-module-jaxb-annotations-2.8.1-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
 	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/1.1/a527213f2fea112a04c9bdf0ec0264e34104cd08/accessors-smart-1.1.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/1.1/b5c478091ad2bfd497758094b00936543393415b/accessors-smart-1.1-sources.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
 	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.7/7873092d39ef741575ca91378a6a21c388363ac8/logback-core-1.1.7.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.7/15a62dbee75aadf62b7d35640533262d764b29d3/logback-core-1.1.7-sources.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
-		</attributes>
-	</classpathentry>
-	<classpathentry path="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/asm-all-repackaged/2.4.0-b34/86ad503fe0d63b04722b0fadebe9e9b57d97ce3/asm-all-repackaged-2.4.0-b34.jar" kind="lib" sourcepath="C:/Users/长宏/.gradle/caches/modules-2/files-2.1/org.glassfish.hk2.external/asm-all-repackaged/2.4.0-b34/9629f042568529e44b7b06374ffa423120cf489b/asm-all-repackaged-2.4.0-b34-sources.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
