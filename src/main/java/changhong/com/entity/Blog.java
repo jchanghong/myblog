@@ -1,51 +1,57 @@
 package changhong.com.entity;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  * The persistent class for the blog database table.
- * 
+ *
  */
 @Entity
-@Table(name="blog")
-@NamedQuery(name="Blog.findAll", query="SELECT b FROM Blog b")
+@Table(name = "blog")
+// @NamedQuery(name="Blog.findAll", query="SELECT b FROM Blog b")
 public class Blog implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(unique=true, nullable=false)
-	private String id;
+	// @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(unique = true, nullable = false)
+	private int id;
 
-	@Column(nullable=false)
+	@Column(nullable = false)
 	private byte complete;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(nullable=false)
+	@Column(nullable = false)
 	private Date createtime;
 
 	@Lob
-	@Column(nullable=false)
+	@Column(nullable = false)
 	private String data;
 
-	@Column(nullable=false, length=255)
+	@Column(nullable = false, length = 255)
 	private String title;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(nullable=false)
+	@Column(nullable = false)
 	private Date updatetime;
 
 	public Blog() {
 	}
 
-	public String getId() {
+	public int getId() {
 		return this.id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

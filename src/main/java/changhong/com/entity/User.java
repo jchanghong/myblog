@@ -1,52 +1,57 @@
 package changhong.com.entity;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  * The persistent class for the user database table.
- * 
+ *
  */
 @Entity
-@Table(name="user")
-@NamedQuery(name="User.findAll", query="SELECT u FROM User u")
+@Table(name = "user")
+// @NamedQuery(name="User.findAll", query="SELECT u FROM User u")
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(unique=true, nullable=false)
-	private String id;
+	// @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(unique = true, nullable = false)
+	private int id;
 
-	@Column(length=50)
+	@Column(length = 50)
 	private String email;
 
-	@Column(length=255)
+	@Column(length = 255)
 	private String imageurl;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(nullable=false)
+	@Column(nullable = false)
 	private Date logintime;
 
-	@Column(nullable=false, length=50)
+	@Column(nullable = false, length = 50)
 	private String name;
 
-	@Column(nullable=false, length=255)
+	@Column(nullable = false, length = 255)
 	private String password;
 
-	@Column(length=255)
+	@Column(length = 255)
 	private String tel;
 
 	public User() {
 	}
 
-	public String getId() {
+	public int getId() {
 		return this.id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
