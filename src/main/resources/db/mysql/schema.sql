@@ -25,6 +25,8 @@ SET NAMES 'utf8';
 -- 
 -- Set default database
 --
+drop database if EXISTS changhongmyblog;
+create database changhongmyblog;
 USE changhongmyblog;
 
 --
