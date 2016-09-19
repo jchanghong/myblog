@@ -53,7 +53,7 @@ dependencies {
 	compile('javax.cache:cache-api')
 	
 	
-	//runtime('org.hsqldb:hsqldb')
+	runtime('org.hsqldb:hsqldb')
 	runtime('mysql:mysql-connector-java')
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
