@@ -10,12 +10,18 @@ import org.springframework.dao.DataAccessException;
 import changhong.com.entity.Blog;
 import changhong.com.entity.Image;
 import changhong.com.entity.User;
+import changhong.com.reposity.BlogNodata;
+import changhong.com.reposity.Userpasswordandname;
 
 /**
  * @author jiang
  *
  */
 public interface BlogServerce {
+
+	Userpasswordandname finduserpassword(String name);
+
+	List<BlogNodata> findbloglist();
 
 	void save(User user) throws DataAccessException;
 

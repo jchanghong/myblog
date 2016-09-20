@@ -13,9 +13,11 @@ import org.springframework.stereotype.Service;
 import changhong.com.entity.Blog;
 import changhong.com.entity.Image;
 import changhong.com.entity.User;
+import changhong.com.reposity.BlogNodata;
 import changhong.com.reposity.BlogRepository;
 import changhong.com.reposity.ImageRepository;
 import changhong.com.reposity.UserRepository;
+import changhong.com.reposity.Userpasswordandname;
 
 /**
  * @author jiang
@@ -127,6 +129,29 @@ public class BlogServerImpl implements BlogServerce {
 	public User finduserbyname(String name) throws DataAccessException {
 		// TODO Auto-generated method stub
 		return UserRepository1.findByName(name);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 *
+	 * @see
+	 * changhong.com.serverce.BlogServerce#finduserpassword(java.lang.String)
+	 */
+	@Override
+	public Userpasswordandname finduserpassword(String name) {
+		// TODO Auto-generated method stub
+		return UserRepository1.findBynameLike(name);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 *
+	 * @see changhong.com.serverce.BlogServerce#findbloglist()
+	 */
+	@Override
+	public List<BlogNodata> findbloglist() {
+		// TODO Auto-generated method stub
+		return blogRepository.findByTitleNotNull();
 	}
 
 }

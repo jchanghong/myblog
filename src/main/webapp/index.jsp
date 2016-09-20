@@ -12,13 +12,15 @@
     <title>长宏的个人网站</title>
 
 
-
-
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/my.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,7 +34,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+ <!-- jQuery -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="myjs/home.js"></script>
 </head>
 
 <body>
@@ -44,7 +48,7 @@
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
-                    Menu <i class="fa fa-bars"></i>
+                    目录 <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="index.html">个人网站</a>
             </div>
@@ -59,7 +63,7 @@
                         <a href="about.html">关于</a>
                     </li>
                     <li>
-                        <a href="editor.html">写日志</a>
+                        <a href="editor.html">写日记</a>
                     </li>
                     <li>
                         <a href="contact.html">联系我</a>
@@ -73,67 +77,93 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <h1>不管你在哪里，我都想着你</h1>
-                        <h2>不管你信不信，反正这是真的</h2>
-                        <!--<span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>-->
+                    <div class="site-heading">
+                        <h1>我的个人网站</h1>
+                        <hr class="small">
+                        <span class="subheading">一个coder的学习过程...</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Post Content -->
-    <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Main Content -->
+    <div class="container">
+        <div>
+            555555
+            <button id="pppppp" onclick="aa()">dddddd</button>
+            <p id="ppppp">dddddddd</p>
+        </div>
+        <div class="row" id="mylist">
+            <!--以个文章面板-->
+            <!--<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 "  >
+                <a href="post.html" class="portfolio-box" >
+                    <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="" >
+                    <h2 class="post-title itemtext" >
+                        fffffff
+                    </h2>
+                    <div class="portfolio-box-caption ">
+                        <div class="portfolio-box-caption-content ">
+                            <div class="project-category text-faded ">
+                                作者：长宏
+                            </div>
+                            <div class="project-name ">
+                                时间：2018年10月
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>-->
+
+           
 
 
-<h1>nimeimeide我的</h1>
-<h2>真的</h2>
-                    <p>内容4444444444444444444444</p>
-                    h2>真的</h2>
-                    <p>内容4444444444444444444444</p>
-                    h2>真的</h2>
-                    <p>内容4444444444444444444444</p>
-                    h2>真的</h2>
-                    <p>内容4444444444444444444444</p>
-                </div>
+
+         
+
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#">更多 &rarr;</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
-    </article>
 
-    <hr>
+        <hr>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    
-                    <p class="copyright text-muted">Copyright &copy; changhong 2016</p>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p class="copyright text-muted">Copyright &copy; changhong 2016</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+       
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+        <!-- Contact Form JavaScript -->
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/contact_me.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
+        <!-- Theme JavaScript -->
+        <script src="js/clean-blog.min.js"></script>
+        
 
 </body>
 
