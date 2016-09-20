@@ -45,7 +45,7 @@ public class BlogController {
 		return server.findbloglist();
 	}
 
-	@RequestMapping(value = "/blog/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/blog/show/{id}", method = RequestMethod.GET)
 	public Blog getallblog(@PathVariable int id) {
 		System.out.println("id is:" + id);
 		Blog blog = server.findblogbyid(id);
@@ -80,7 +80,7 @@ public class BlogController {
 
 	}
 
-	@RequestMapping(value = "/addblog", method = RequestMethod.GET)
+	@RequestMapping(value = "/addblog/a/a", method = RequestMethod.GET)
 	public int addablgo() {
 
 		Blog blog = new Blog();
