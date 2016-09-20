@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import changhong.com.entity.Blog;
 import changhong.com.reposity.BlogNodata;
 import changhong.com.serverce.BlogServerce;
+import changhong.com.util.StaticImageurl;
 
 /**
  * @author jiang
@@ -67,6 +68,7 @@ public class BlogController {
 			// blog.setTitle(title);
 			blog.setUpdatetime(new Date());
 			blog.setId(BlogController.blogid++);
+			blog.setImage(StaticImageurl.getaurl());
 			server.saveblog(blog);
 		}
 		return blog;

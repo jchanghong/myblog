@@ -1,27 +1,27 @@
 
 $(document).ready(function () {
     aa();
-    $("a.portfolio-box").each(function (index, element) {
-        // element == this
-         $(element).click(function (e) { 
-      
-         var id=$(element).attr("title");alert(id);
-         sessionStorage.setItem("id",id);
-    });
-    });
+
 });
 
+function bb() {
+    $("a.portfolio-box").each(function (index, element) {
+        $(element).click(function (e) {
+            var id = $(element).attr("title"); alert(id);
+            sessionStorage.setItem("id", id);
+        });
+    });
+}
 function aa() {
     $.get("http://localhost:8080/myblog/blogs",
         function (data, status) {
-            
-            // alert("Data: " + data + "\nStatus: " + status);
-            var bloss="";
+            var bloss = "";
             for (var index = 0; index < data.length; index++) {
                 var element = data[index];
-               bloss+=getbloghtml(element);
+                bloss += getbloghtml(element);
             }
             $("#mylist").append(bloss);
+            bb();
         }
     );
 
@@ -31,7 +31,7 @@ function getbloghtml(blog) {
     var html = "";
     html += '<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 "  >';
     html += geturlfor_blog(blog["id"]);
-    html += ' <img src="'+blog["image"]+'" class="img-responsive" alt="" >';
+    html += ' <img src="' + blog["image"] + '" class="img-responsive" alt="" >';
     html += ' <h2 class="post-title itemtext" >';
     html += ' fffffff';
     html += '</h2>';
@@ -47,15 +47,10 @@ function getbloghtml(blog) {
     html += ' </div>';
     html += ' </a>';
     html += '</div>';
-
-return html;
-
+    return html;
 }
 
-function geturlfor_blog(blogid)
-{
-
-
-return  '<a href="'+
-'http://localhost:8080/myblog/post.html"'+'title="'+blogid+'"'+'" class="portfolio-box" >';
+function geturlfor_blog(blogid) {
+    return '<a href="' +
+        'http://localhost:8080/myblog/post.html"' + '  title="' + blogid + '"' + '" class="portfolio-box" >';
 }

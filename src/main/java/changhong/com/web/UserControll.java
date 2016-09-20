@@ -56,7 +56,7 @@ public class UserControll {
 		return user;
 	}
 
-	@RequestMapping(value = "/user/{name}", method = RequestMethod.GET)
+	@RequestMapping(value = "/user/show/{name}", method = RequestMethod.GET)
 	public User addablgo(@PathVariable String name) {
 		User blog = server.finduserbyname(name);
 		return blog;
