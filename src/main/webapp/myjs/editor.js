@@ -80,7 +80,7 @@ function on11111()
         $.ajax({
             type: "POST",
             url: "http://localhost:8080/myblog/blog/new",
-            data: blog,
+            data: JSON.stringify(blog),
             Accept:"application/json",
             contentType:"application/json; charset=utf-8",
             dataType: "dataType",

@@ -26,8 +26,9 @@ function geall1t()
 {
 
 
+var ids=sessionStorage.getItem("id");
     $.ajax({
-                url: "http://localhost:8080/myblog/blog/2",
+                url: "http://localhost:8080/myblog/blog/"+ids,
                 type: "GET",
                 success: function(data) {
                     // Success message
