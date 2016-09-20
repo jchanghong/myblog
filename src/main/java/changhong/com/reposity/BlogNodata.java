@@ -15,6 +15,8 @@ public interface BlogNodata {
 
 	String getTitle();
 
+	String getImage();
+
 	Date getUpdatetime();
 
 	int getComplete();

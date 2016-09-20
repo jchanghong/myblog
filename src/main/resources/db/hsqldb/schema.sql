@@ -3,6 +3,7 @@
 CREATE TABLE blog (
   id int NOT NULL PRIMARY KEY,
   title varchar(50) NOT NULL,
+  image varchar(50) NOT NULL,
   data VARCHAR(2014) NOT NULL,
   createtime datetime NOT NULL,
   updatetime datetime NOT NULL,

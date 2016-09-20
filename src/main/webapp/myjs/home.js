@@ -31,7 +31,7 @@ function getbloghtml(blog) {
     var html = "";
     html += '<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 "  >';
     html += geturlfor_blog(blog["id"]);
-    html += ' <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="" >';
+    html += ' <img src="'+blog["image"]+'" class="img-responsive" alt="" >';
     html += ' <h2 class="post-title itemtext" >';
     html += ' fffffff';
     html += '</h2>';

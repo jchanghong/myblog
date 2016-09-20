@@ -33,6 +33,8 @@ public interface BlogServerce {
 
 	List<Blog> findallblog() throws DataAccessException;
 
+	List<User> findalluser() throws DataAccessException;
+
 	Blog findblogbytitle(String title) throws DataAccessException;
 
 	User finduserbyname(String name) throws DataAccessException;

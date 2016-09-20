@@ -10,6 +10,7 @@ DROP TABLE if EXISTS blog;
 CREATE TABLE blog (
   id bigint(20) NOT NULL AUTO_INCREMENT,
   title varchar(255) NOT NULL,
+   image varchar(50) NOT NULL,
   data text NOT NULL,
   createtime datetime NOT NULL,
   updatetime datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,

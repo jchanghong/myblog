@@ -10,6 +10,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import changhong.com.web.UserControll;
+
 /**
  * The persistent class for the user database table.
  *
@@ -45,6 +47,7 @@ public class User implements Serializable {
 	private String tel;
 
 	public User() {
+		id = UserControll.userid++;
 	}
 
 	public int getId() {

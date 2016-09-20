@@ -11,6 +11,9 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import changhong.com.util.StaticImageurl;
+import changhong.com.web.BlogController;
+
 /**
  * The persistent class for the blog database table.
  *
@@ -39,12 +42,31 @@ public class Blog implements Serializable {
 
 	@Column(nullable = false, length = 255)
 	private String title;
+	@Column(nullable = false, length = 255)
+	private String image;
+
+	/**
+	 * @return the image
+	 */
+	public String getImage() {
+		return this.image;
+	}
+
+	/**
+	 * @param image
+	 *            the image to set
+	 */
+	public void setImage(String image) {
+		this.image = image;
+	}
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(nullable = false)
 	private Date updatetime;
 
 	public Blog() {
+		id = BlogController.blogid++;
+		image = StaticImageurl.getaurl();
 	}
 
 	public int getId() {

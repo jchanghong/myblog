@@ -38,13 +38,13 @@ configurations {
 dependencies {
    // compile files('libs/a.jar', 'libs/b.jar')
     compile fileTree(dir: 'src/lib', include: '*.jar')
-	compile('org.springframework.boot:spring-boot-starter-aop')
+	//compile('org.springframework.boot:spring-boot-starter-aop')
 	compile('org.springframework.boot:spring-boot-starter-cache')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	
 	compile('org.springframework.boot:spring-boot-starter-jdbc')
 	//compile('org.springframework.boot:spring-boot-starter-security')
-	compile('org.springframework.boot:spring-boot-starter-validation')
+	//compile('org.springframework.boot:spring-boot-starter-validation')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	//compile('org.springframework.boot:spring-boot-starter-web-services')
 	//compile('org.springframework.boot:spring-boot-starter-websocket')

@@ -154,4 +154,20 @@ public class BlogServerImpl implements BlogServerce {
 		return blogRepository.findByTitleNotNull();
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see changhong.com.serverce.BlogServerce#findalluser()
+	 */
+	@Override
+	public List<User> findalluser() throws DataAccessException {
+		// TODO Auto-generated method stub
+		List<User> list = new ArrayList<User>();
+		for (User blog : UserRepository1.findAll()) {
+			list.add(blog);
+		}
+		return list;
+		// return null;
+	}
+
 }

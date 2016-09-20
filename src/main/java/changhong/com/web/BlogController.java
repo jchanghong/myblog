@@ -9,6 +9,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,9 +25,20 @@ import changhong.com.serverce.BlogServerce;
 @RestController
 public class BlogController {
 
-	static int blogid = 1;
-	@Autowired
+	public static int blogid = 1;
 	BlogServerce server;
+
+	/**
+	 * @param server
+	 */
+	@Autowired
+	public BlogController(BlogServerce server) {
+		super();
+		this.server = server;
+
+		List<BlogNodata> list = server.findbloglist();
+		BlogController.blogid = list.stream().mapToInt(a -> a.getId()).max().orElse(1);
+	}
 
 	@RequestMapping(value = "/blogs", method = RequestMethod.GET)
 	public List<BlogNodata> getallblog() {
@@ -35,33 +47,35 @@ public class BlogController {
 
 	@RequestMapping(value = "/blog/{id}", method = RequestMethod.GET)
 	public Blog getallblog(@PathVariable int id) {
+		System.out.println("id is:" + id);
 		Blog blog = server.findblogbyid(id);
 		return blog;
 	}
 
-	@RequestMapping(value = "/blog/{id}", method = RequestMethod.POST)
-	public String saveblog(@PathVariable int id, String data, String title, BindingResult bResult) {
+	@RequestMapping(value = "/blog/new", method = RequestMethod.POST)
+	public Blog saveblog(@RequestBody Blog blog, BindingResult bResult) {
+		// System.out.println(string + "------------------------------------");
+		// Blog blog = new Blog();
 		if (bResult.hasErrors()) {
 			System.out.println(bResult.getAllErrors());
-			return "0";
+			return new Blog();
+			// throw new RuntimeException(bResult.getAllErrors().toString());
 		} else {
-			Blog blog = new Blog();
-			blog.setData(data);
+			// blog.setData(data);
 			blog.setCreatetime(new Date());
 			blog.setComplete((byte) 1);
-			blog.setTitle(title);
+			// blog.setTitle(title);
 			blog.setUpdatetime(new Date());
 			blog.setId(BlogController.blogid++);
 			server.saveblog(blog);
 		}
-		return "1";
+		return blog;
 
 	}
 
 	@RequestMapping(value = "/blog/new", method = RequestMethod.GET)
 	public Blog newblog() {
 		Blog blog = new Blog();
-		blog.setId(BlogController.blogid++);
 		return blog;
 
 	}
