@@ -1,12 +1,20 @@
 
 $(document).ready(function () {
     aa();
+    $("a.portfolio-box").each(function (index, element) {
+        // element == this
+         $(element).click(function (e) { 
+      
+         var id=$(element).attr("title");alert(id);
+         sessionStorage.setItem("id",id);
+    });
+    });
 });
 
 function aa() {
     $.get("http://localhost:8080/myblog/blogs",
         function (data, status) {
-
+            
             // alert("Data: " + data + "\nStatus: " + status);
             var bloss="";
             for (var index = 0; index < data.length; index++) {
@@ -47,6 +55,7 @@ return html;
 function geturlfor_blog(blogid)
 {
 
+
 return  '<a href="'+
-"http://localhost:8080/myblog/blog/show/"+blogid+'" class="portfolio-box" >';
+'http://localhost:8080/myblog/post.html"'+'title="'+blogid+'"'+'" class="portfolio-box" >';
 }

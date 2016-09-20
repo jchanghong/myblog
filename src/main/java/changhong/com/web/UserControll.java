@@ -3,14 +3,12 @@
  */
 package changhong.com.web;
 
-import java.util.Date;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import changhong.com.entity.Blog;
 import changhong.com.entity.User;
 import changhong.com.serverce.BlogServerce;
 
@@ -24,7 +22,7 @@ public class UserControll {
 	@Autowired
 	BlogServerce server;
 
-	@RequestMapping(value = "/user", method = RequestMethod.POST)
+	@RequestMapping(value = "/user/new", method = RequestMethod.POST)
 	public String saveblog(User user) {
 		if (user.getId() < 1) {
 			user.setId(UserControll.blogid++);
@@ -34,18 +32,21 @@ public class UserControll {
 		return "ok";
 	}
 
-	@RequestMapping(value = "/addb44444log", method = RequestMethod.GET)
-	public int addablgo() {
+	@RequestMapping(value = "/user/new", method = RequestMethod.GET)
+	public User saveblognew() {
+		User user = new User();
+		if (user.getId() < 1) {
+			user.setId(UserControll.blogid++);
 
-		Blog blog = new Blog();
-		blog.setData("111111111");
-		blog.setCreatetime(new Date());
-		blog.setComplete((byte) 1);
-		blog.setTitle("title");
-		blog.setUpdatetime(new Date());
-		blog.setId(BlogController.blogid++);
-		server.saveblog(blog);
-		return blog.getId();
+		}
+		return user;
+	}
+
+	@RequestMapping(value = "/user/{name}", method = RequestMethod.GET)
+	public User addablgo(@PathVariable String name) {
+
+		User blog = server.finduserbyname(name);
+		return blog;
 	}
 
 }
