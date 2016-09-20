@@ -1,6 +1,10 @@
 
 $(document).ready(function () {
     aa();
+    // $("a#more").click(function (e) { 
+    //     alert("more");
+    //      location.assign("http://localhost:8080/myblog/post.html");
+    // });
 
 });
 
@@ -33,7 +37,7 @@ function getbloghtml(blog) {
     html += geturlfor_blog(blog["id"]);
     html += ' <img src="' + blog["image"] + '" class="img-responsive" alt="" >';
     html += ' <h2 class="post-title itemtext" >';
-    html += ' fffffff';
+    html += blog["title"];
     html += '</h2>';
     html += ' <div class="portfolio-box-caption ">';
     html += '<div class="portfolio-box-caption-content ">';

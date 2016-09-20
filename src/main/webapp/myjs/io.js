@@ -16,10 +16,14 @@ function postblog(title, data) {
         data: JSON.stringify(blog),
         Accept: "application/json",
         contentType: "application/json; charset=utf-8",
-        dataType: "application/json; charset=utf-8",
-        success: function (response) {
-            alert("成功！！！");
+        // dataType: "application/json; charset=utf-8",
+        success: function (result,status,xhr) {
+            // alert("成功！！！"+result["id"]+status);
+            sessionStorage.setItem("id",result["id"]);
               location.assign("http://localhost:8080/myblog/post.html");
+        },
+        error: function (xhr, status, error) {
+            alert("失败！！！"+status+error);
         }
     });
 
