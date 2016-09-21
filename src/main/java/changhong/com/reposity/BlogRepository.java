@@ -3,8 +3,6 @@
  */
 package changhong.com.reposity;
 
-import java.util.List;
-
 import org.springframework.data.repository.CrudRepository;
 
 import changhong.com.entity.Blog;
@@ -15,7 +13,5 @@ import changhong.com.entity.Blog;
  */
 public interface BlogRepository extends CrudRepository<Blog, Integer> {
 	Blog findByTitle(String title);
-
-	List<BlogNodata> findByTitleNotNull();
 
 }

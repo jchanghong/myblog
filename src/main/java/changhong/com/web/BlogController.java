@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import changhong.com.entity.Blog;
-import changhong.com.reposity.BlogNodata;
+import changhong.com.entity.SimpleBlog;
 import changhong.com.serverce.BlogServerce;
 import changhong.com.util.StaticImageurl;
 
@@ -36,13 +36,18 @@ public class BlogController {
 	public BlogController(BlogServerce server) {
 		super();
 		this.server = server;
-
-		List<BlogNodata> list = server.findbloglist();
+		List<Blog> list = server.findallblog();
 		BlogController.blogid = list.stream().mapToInt(a -> a.getId()).max().orElse(1);
 	}
 
+	@RequestMapping(value = "/blogs/{text}", method = RequestMethod.GET)
+	public List<SimpleBlog> serchblog(@PathVariable String text) {
+		System.out.println("serch text is:" + text);
+		return server.serch(text);
+	}
+
 	@RequestMapping(value = "/blogs", method = RequestMethod.GET)
-	public List<BlogNodata> getallblog() {
+	public List<SimpleBlog> getallblog() {
 		return server.findbloglist();
 	}
 

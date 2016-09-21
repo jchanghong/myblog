@@ -52,3 +52,5 @@ function postuser(name, password, email, tel) {
     });
 
 }
+
+

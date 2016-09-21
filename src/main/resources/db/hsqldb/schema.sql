@@ -1,4 +1,10 @@
 
+CREATE TABLE message (
+  id int NOT NULL PRIMARY KEY ,
+  name varchar(255) NOT NULL,
+   message varchar(255) NOT NULL,
+  time datetime NOT NULL
+);
 
 CREATE TABLE blog (
   id int NOT NULL PRIMARY KEY,

@@ -22,7 +22,8 @@
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,6 +31,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+       <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="myjs/message.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -54,11 +61,11 @@
                         <a href="index.html">主页</a>
                     </li>
 
-                      <li>
+                    <li>
                         <a href="editor.html">写日记</a>
                     </li>
                     <li>
-                        <a href="message.html">留言板</a>
+                        <a href="ablout.html">关于我</a>
                     </li>
                 </ul>
             </div>
@@ -86,10 +93,57 @@
     <!-- Main Content -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>前两天首批 iPhone 7/7 Plus 的评测已经出炉，基本的共识是：这是史上最好的一代 iPhone，拍照更好了，性能更强了，工艺更精湛了。当然我们对 iPhone 的要求不能太低，虽然苹果给自己列举了十大亮点更新，这次 iPhone 的更新其实还是缺少所谓的革命性，即便这种评价已经伴随了苹果很多年了。</p>
-                <p>“我知道苹果取消耳机孔以后，第一个反应是它这一代一定会做快充（降低充电占用接口的需求强度和频率），第二个反应是它会支持 aptX HD 蓝牙高音质传输或者类似方案（降低耳机占用接口的需求强度和频率）。结果一场发布会被打了两次脸 :-(”</p>
-                <p>此言不虚，这次 iPhone7/7 Plus 的更新中，苹果确实还有一些应该做但是没有做的事情。</p>
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-pencil"></span> 发送消息
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form  id="message-form">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">你的名字</label>
+                                <input class="form-control" name="n" id="myname" placeholder="请输入你的名字"></div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">你的留言</label>
+                                <textarea class="form-control" name="m" id="mymessage" placeholder="请输入你的留言"></textarea>
+                            </div>
+                            <button id="mysend" type="submit" class="btn btn-primary">发送消息</button>
+                            <button id="myreset" type="button" class="btn btn-info">清空输入</button>
+
+                            <p id="myresult" class="alert1 alert-success1"></p>
+                            <!--<p id="sent-fail" class="alert1 alert-danger1"></p>-->
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+<!--//下面是消息内容-->
+            <div class="col-xs-12 col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <span class="glyphicon glyphicon-list-alt"></span> 所有留言
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group" id="mylist">
+                            
+                            <li class="list-group-item">
+                                {{greeting.name}} 留言于 ({{greeting.create_at}})
+                                <p>{{greeting得到.comment}}</p>
+                            </li>
+                             <li class="list-group-item">
+                                {{greeting.name}} 留言于 ({{greeting.create_at}})
+                                <p>{{greeting得到.comment}}</p>
+                            </li>
+                            <li class="list-group-item">Placeholder message分割</li>
+                            分割
+
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -101,18 +155,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    
+
                     <p class="copyright text-muted">Copyright &copy; changhong 2016</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+ 
 
     <!-- Contact Form JavaScript -->
     <!--<script src="js/jqBootstrapValidation.js"></script>-->

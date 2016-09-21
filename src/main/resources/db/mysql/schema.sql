@@ -5,6 +5,21 @@ CHARACTER SET utf8
 COLLATE utf8_general_ci;
 USE changhongmyblog;
 
+DROP TABLE if EXISTS message;
+CREATE TABLE message (
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
+   message varchar(255) NOT NULL,
+  time datetime NOT NULL,
+  PRIMARY KEY (id)
+)
+ENGINE = INNODB
+AUTO_INCREMENT = 1
+CHARACTER SET utf8
+COLLATE utf8_general_ci
+ROW_FORMAT = DYNAMIC;
+
+
 DROP TABLE if EXISTS blog;
 
 CREATE TABLE blog (

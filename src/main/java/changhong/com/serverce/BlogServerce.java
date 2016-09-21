@@ -9,8 +9,9 @@ import org.springframework.dao.DataAccessException;
 
 import changhong.com.entity.Blog;
 import changhong.com.entity.Image;
+import changhong.com.entity.Message;
+import changhong.com.entity.SimpleBlog;
 import changhong.com.entity.User;
-import changhong.com.reposity.BlogNodata;
 import changhong.com.reposity.Userpasswordandname;
 
 /**
@@ -19,9 +20,27 @@ import changhong.com.reposity.Userpasswordandname;
  */
 public interface BlogServerce {
 
+	// mesage
+	void addmessage(Message message) throws DataAccessException;
+
+	List<Message> getallmessaget() throws DataAccessException;
+
+	// mesage
+	/**
+	 * @param namedd
+	 * @return
+	 */
 	Userpasswordandname finduserpassword(String name);
 
-	List<BlogNodata> findbloglist();
+	/**
+	 * @param text
+	 *            空格代表and 如rr rr rr4
+	 * @return
+	 * @throws DataAccessException
+	 */
+	List<SimpleBlog> serch(String text) throws DataAccessException;
+
+	List<SimpleBlog> findbloglist();
 
 	void save(User user) throws DataAccessException;
 

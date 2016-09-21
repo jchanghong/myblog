@@ -23,7 +23,6 @@ import changhong.com.web.BlogController;
 // @NamedQuery(name="Blog.findAll", query="SELECT b FROM Blog b")
 public class Blog implements Serializable {
 	private static final long serialVersionUID = 1L;
-
 	@Id
 	// @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(unique = true, nullable = false)
