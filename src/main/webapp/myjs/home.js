@@ -88,7 +88,7 @@ function serch() {
                 var bloss = "";
                 for (var index = 0; index < data.length; index++) {
                     var element = data[index];
-                    bloss += getbloghtml(element);
+                    bloss += getbloghtml22(element);
                 }
                 // $("#mylist").append(bloss);
                 $("#mylist").before(bloss);
@@ -130,7 +130,7 @@ function more() {
 
 }
 function bb() {
-    $("a.portfolio-box").each(function (index, element) {
+    $("a.myaaaaa2").each(function (index, element) {
         $(element).click(function (e) {
             var id = $(element).attr("title");
             // alert(id);
@@ -145,7 +145,7 @@ function aa(start) {
             var bloss = "";
             for (var index = 0; index < data.length; index++) {
                 var element = data[index];
-                bloss += getbloghtml(element);
+                bloss += getbloghtml22(element);
             }
             // $("#mylist").append(bloss);
             $("#mylist").before(bloss);
@@ -156,6 +156,8 @@ function aa(start) {
 }
 
 function getbloghtml(blog) {
+
+    var dates=new Date(blog["Updatetime"]);
     var html = "";
     html += '<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 aaaaaaaaaa"  >';
     html += geturlfor_blog(blog["id"]);
@@ -201,11 +203,12 @@ function moredown() {
     $.get(encodeURI(ourl),
         function (data, status) {
             // alert(data);
+
             $(".aaaaaaaaaa").remove();
             var bloss = "";
             for (var index = 0; index < data.length; index++) {
                 var element = data[index];
-                bloss += getbloghtml(element);
+                bloss += getbloghtml22(element);
             }
             // $("#mylist").append(bloss);
             $("#mylist").before(bloss);
@@ -238,11 +241,13 @@ function moreup() {
     $.get(encodeURI(ourl),
         function (data, status) {
             // alert(data);
+            
+          
             $(".aaaaaaaaaa").remove();
             var bloss = "";
             for (var index = 0; index < data.length; index++) {
                 var element = data[index];
-                bloss += getbloghtml(element);
+                bloss += getbloghtml22(element);
             }
             // $("#mylist").append(bloss);
             $("#mylist").before(bloss);
@@ -255,4 +260,33 @@ function moreup() {
         }
     );
 
+}
+
+
+function getbloghtml22(blog) {
+      var dates=new Date(blog["Updatetime"]);
+    var html = "";
+    html += '<div class="col-xs-12 col-md-6 aaaaaaaaaa">';
+    html+=' <a href="http://localhost:8080/myblog/post.html" class="myaaaaa2" ';
+    html+=' title="'+blog["id"]+'" >';
+    html += '<div class="panel panel-default">';
+    html+='  <img src=';
+    html += '"'+blog["image"]+'"';
+    html += '  class="img-responsive" alt="图片">';
+    html += '<div class="panel-body">';
+    html += ' <h2 class="post-title itemtext">';
+    html += blog["title"];
+    html += '  </h2>';
+    html += '   <p>';
+    html += blog["data"];
+    html += '  </p>';
+    html += ' </div>';
+    html+='   </a>';
+    html += '<div class="panel-footer">';
+    html += dates.toLocaleString();
+    html += '   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+    html += '   重庆';
+    html += '  </div>';
+    html += ' </div></div>';
+    return html;
 }

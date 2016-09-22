@@ -14,8 +14,9 @@ function myinit() {
 }
 function getitemhtml22(element) {
     var htmli = "";
+    var date2=new Date(element["time"]);
     htmli += '  <li class="list-group-item">';
-    htmli += element["name"] + '  留言于 ' + element["time"];
+    htmli += element["name"] + '  留言于 ' + date2.toLocaleString();
     htmli += '    <p>' + element["message"] + '</p>';
     htmli += '  </li>';
     return htmli;
