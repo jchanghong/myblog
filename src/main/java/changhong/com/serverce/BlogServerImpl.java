@@ -206,7 +206,7 @@ public class BlogServerImpl implements BlogServerce {
 	@Cacheable(value = "blogssimple")
 	public List<SimpleBlog> serch(String text) throws DataAccessException {
 		// TODO Auto-generated method stub
-		BlogServerImpl.serchtext = text;
+		BlogServerImpl.serchtext = text.trim();
 
 		List<Blog> allblog = new ArrayList<>();
 		blogRepository.findAll().forEach(a -> allblog.add(a));
@@ -222,23 +222,23 @@ public class BlogServerImpl implements BlogServerce {
 	 * @return true 满足
 	 */
 	static boolean doserchfilter(Blog nodata) {
-		if (BlogServerImpl.serchtext.trim().length() < 1) {
+		if (BlogServerImpl.serchtext.length() < 1) {
 			return true;
 		}
-		boolean b = true;
-		for (String string : BlogServerImpl.serchtext.trim().split("\\s*")) {
+		for (String string : BlogServerImpl.serchtext.trim().split("\\s+")) {
+			System.out.println(string);
 			if (string.length() < 1) {
 				continue;
 			}
 			if (!nodata.getTitle().contains(string)) {
-				b = false;
+				return false;
 			}
-			if (!nodata.getData().contains(string)) {
-				b = false;
+			if (!nodata.getDatanohtml().contains(string)) {
+				return false;
 			}
 
 		}
-		return b;
+		return true;
 	}
 
 	/*
@@ -267,10 +267,11 @@ public class BlogServerImpl implements BlogServerce {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see changhong.com.serverce.BlogServerce#blogcounts()
 	 */
 	@Override
+	@Cacheable(value = "blogs")
 	public long blogcounts() throws DataAccessException {
 		// TODO Auto-generated method stub
 		return blogRepository.count();

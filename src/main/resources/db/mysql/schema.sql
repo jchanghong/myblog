@@ -1,13 +1,15 @@
-DROP DATABASE if EXISTS changhongmyblog;
+--DROP DATABASE if EXISTS changhongmyblog;
 
-CREATE DATABASE changhongmyblog
+CREATE DATABASE if not exists changhongmyblog
 CHARACTER SET utf8
 COLLATE utf8_general_ci;
 USE changhongmyblog;
 
-DROP TABLE if EXISTS message;
-CREATE TABLE message (
-  id bigint(20) NOT NULL AUTO_INCREMENT,
+--DROP TABLE if EXISTS message;
+CREATE TABLE if not exists message (
+  id bigint(20) NOT NULL 
+--  AUTO_INCREMENT
+  ,
   name varchar(255) NOT NULL,
    message varchar(255) NOT NULL,
   time datetime NOT NULL,
@@ -20,10 +22,12 @@ COLLATE utf8_general_ci
 ROW_FORMAT = DYNAMIC;
 
 
-DROP TABLE if EXISTS blog;
+--DROP TABLE if EXISTS blog;
 
-CREATE TABLE blog (
-  id bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE if not exists blog (
+  id bigint(20) NOT NULL 
+--  AUTO_INCREMENT
+  ,
   title varchar(255) NOT NULL,
    image varchar(50) NOT NULL,
   data text NOT NULL,
@@ -40,10 +44,12 @@ COLLATE utf8_general_ci
 ROW_FORMAT = DYNAMIC;
 USE changhongmyblog;
 
-DROP TABLE if EXISTS image;
+--DROP TABLE if EXISTS image;
 
-CREATE TABLE image (
-  id bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE if not exists image (
+  id bigint(20) NOT NULL 
+--  AUTO_INCREMENT
+  ,
   url varchar(255) DEFAULT NULL,
   data blob DEFAULT NULL,
   PRIMARY KEY (id)
@@ -55,10 +61,12 @@ COLLATE utf8_general_ci
 ROW_FORMAT = DYNAMIC;
 USE changhongmyblog;
 
-DROP TABLE if EXISTS user;
+--DROP TABLE if EXISTS user;
 
-CREATE TABLE user (
-  id bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE if not exists user (
+  id bigint(20) NOT NULL 
+--  AUTO_INCREMENT
+  ,
   name varchar(50) binary CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   password varchar(255) NOT NULL,
   imageurl varchar(255) DEFAULT NULL,
