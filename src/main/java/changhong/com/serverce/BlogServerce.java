@@ -58,4 +58,6 @@ public interface BlogServerce {
 
 	User finduserbyname(String name) throws DataAccessException;
 
+	long blogcounts() throws DataAccessException;
+
 }

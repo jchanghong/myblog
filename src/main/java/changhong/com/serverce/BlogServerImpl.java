@@ -265,4 +265,15 @@ public class BlogServerImpl implements BlogServerce {
 		return messageRepository1.findByNameNotNull();
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see changhong.com.serverce.BlogServerce#blogcounts()
+	 */
+	@Override
+	public long blogcounts() throws DataAccessException {
+		// TODO Auto-generated method stub
+		return blogRepository.count();
+	}
+
 }

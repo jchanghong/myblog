@@ -26,8 +26,28 @@ import changhong.com.util.StaticImageurl;
 @RestController
 public class BlogController {
 
-	public static int blogid = 1;
+	public static int blogid = -1;
 	BlogServerce server;
+
+	@RequestMapping(value = "blogs/number/sum")
+	public long blognumbers() {
+		return server.blogcounts();
+
+	}
+
+	@RequestMapping(value = "blogs/get10/{start}", method = RequestMethod.GET)
+	public List<SimpleBlog> blognumbers10(@PathVariable int start) {
+		System.out.println("stat is" + start);
+		List<SimpleBlog> all = server.findbloglist();
+		long sum = server.blogcounts();
+		if (start + 10 > sum) {
+			return all.subList(start, (int) sum);
+		} else {
+			return all.subList(start, start + 10);
+		}
+		// return reSimpleBlogs;
+
+	}
 
 	/**
 	 * @param server
@@ -37,7 +57,7 @@ public class BlogController {
 		super();
 		this.server = server;
 		List<Blog> list = server.findallblog();
-		BlogController.blogid = list.stream().mapToInt(a -> a.getId()).max().orElse(1);
+		BlogController.blogid = list.stream().mapToInt(a -> a.getId()).max().orElse(-1);
 	}
 
 	@RequestMapping(value = "/blogs/{text}", method = RequestMethod.GET)
@@ -51,10 +71,27 @@ public class BlogController {
 		return server.findbloglist();
 	}
 
-	@RequestMapping(value = "/blog/show/{id}", method = RequestMethod.GET)
-	public Blog getallblog(@PathVariable int id) {
+	@RequestMapping(value = "/blog/show/orup/{id}", method = RequestMethod.GET)
+	public Blog getallblogup(@PathVariable int id) {
 		System.out.println("id is:" + id);
 		Blog blog = server.findblogbyid(id);
+		while (blog == null && id >= 0) {
+			blog = server.findblogbyid(id--);
+		}
+		return blog;
+	}
+
+	@RequestMapping(value = "/blog/show/ordown/{id}", method = RequestMethod.GET)
+	public Blog getallblogdown(@PathVariable int id) {
+		System.out.println("id is:" + id);
+		Blog blog = server.findblogbyid(id);
+		long sum = server.blogcounts();
+		while (blog == null && id < sum) {
+			blog = server.findblogbyid(id++);
+		}
+		if (blog == null) {
+			blog = getallblogdown(0);
+		}
 		return blog;
 	}
 
@@ -72,7 +109,7 @@ public class BlogController {
 			blog.setComplete((byte) 1);
 			// blog.setTitle(title);
 			blog.setUpdatetime(new Date());
-			blog.setId(BlogController.blogid++);
+			blog.setId(++BlogController.blogid);
 			blog.setImage(StaticImageurl.getaurl());
 			server.saveblog(blog);
 		}
@@ -96,7 +133,7 @@ public class BlogController {
 		blog.setComplete((byte) 1);
 		blog.setTitle("title");
 		blog.setUpdatetime(new Date());
-		blog.setId(BlogController.blogid++);
+		blog.setId(++BlogController.blogid);
 		server.saveblog(blog);
 		return blog.getId();
 	}
