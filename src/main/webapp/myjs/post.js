@@ -5,7 +5,7 @@ $(document).ready(function () {
         id=0;
         sessionStorage.setItem("id",id);
     }
-    $.get("http://localhost:8080/myblog/blog/show/ordown/" + id,
+    $.get("http://60.205.188.25/blog/show/ordown/" + id,
         function (data, status) {
             $("header.intro-header").css("background-image", data["image"]);
             $("div.post-heading").append(' <h1 id="title">' + data["title"] + '</h1>');
@@ -32,7 +32,7 @@ function upmy()
 
   
       sessionStorage.setItem("id",--isss);
-    $.get("http://localhost:8080/myblog/blog/show/orup/" + isss,
+    $.get("http://60.205.188.25/blog/show/orup/" + isss,
         function (data, status) {
             $("header.intro-header").css("background-image", data["image"]);
             $("div.post-heading").append(' <h1 id="title">' + data["title"] + '</h1>');
@@ -54,7 +54,7 @@ function mydown()
 
   
       sessionStorage.setItem("id",++isss);
-    $.get("http://localhost:8080/myblog/blog/show/ordown/" + isss,
+    $.get("http://60.205.188.25/blog/show/ordown/" + isss,
         function (data, status) {
             $("header.intro-header").css("background-image", data["image"]);
             $("div.post-heading").append(' <h1 id="title">' + data["title"] + '</h1>');

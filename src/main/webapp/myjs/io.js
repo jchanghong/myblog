@@ -13,7 +13,7 @@ function postblog(title, data,nohtml) {
     $.ajax({
         type: "POST",
         cache: false,
-        url: "http://localhost:8080/myblog/blog/new",
+        url: "http://60.205.188.25/blog/new",
         data: JSON.stringify(blog),
         Accept: "application/json",
         contentType: "application/json; charset=utf-8",
@@ -21,7 +21,7 @@ function postblog(title, data,nohtml) {
         success: function (result,status,xhr) {
             // alert("成功！！！"+result["id"]+status);
             sessionStorage.setItem("id",result["id"]);
-              location.assign("http://localhost:8080/myblog/post.html");
+              location.assign("http://60.205.188.25/post.html");
         },
         error: function (xhr, status, error) {
             alert("失败！！！"+status+error);
@@ -42,7 +42,7 @@ function postuser(name, password, email, tel) {
     $.ajax({
         type: "POST",
         cache: false,
-        url: "http://localhost:8080/myblog/user/new",
+        url: "http://60.205.188.25/user/new",
         data: JSON.stringify(blog),
         Accept: "application/json",
         contentType: "application/json; charset=utf-8",
