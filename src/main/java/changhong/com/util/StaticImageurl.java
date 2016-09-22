@@ -14,7 +14,7 @@ public class StaticImageurl {
 	public static String getaurl() {
 
 		long d = (long) (Math.random() * 200);
-		long image = d % 12;
+		long image = d % 11;
 
 		return StaticImageurl.url + image + ".jpg";
 
