@@ -37,6 +37,24 @@ public class Blog implements Serializable {
 	@Lob
 	@Column(nullable = false)
 	private String data;
+	@Lob
+	@Column(nullable = false)
+	private String datanohtml;
+
+	/**
+	 * @return the datanohtml
+	 */
+	public String getDatanohtml() {
+		return this.datanohtml;
+	}
+
+	/**
+	 * @param datanohtml
+	 *            the datanohtml to set
+	 */
+	public void setDatanohtml(String datanohtml) {
+		this.datanohtml = datanohtml;
+	}
 
 	@Column(nullable = false, length = 255)
 	private String title;

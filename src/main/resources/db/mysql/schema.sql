@@ -27,6 +27,7 @@ CREATE TABLE blog (
   title varchar(255) NOT NULL,
    image varchar(50) NOT NULL,
   data text NOT NULL,
+   datanohtml text NOT NULL,
   createtime datetime NOT NULL,
   updatetime datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,
   complete tinyint(1) NOT NULL DEFAULT 1,

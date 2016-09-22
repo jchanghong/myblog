@@ -25,10 +25,10 @@ public class SimpleBlog implements Serializable {
 	public SimpleBlog(Blog blog) {
 		// TODO Auto-generated constructor stub
 		id = blog.getId();
-		if (blog.getData().length() < 30) {
-			data = blog.getData();
+		if (blog.getDatanohtml().length() < 30) {
+			data = blog.getDatanohtml();
 		} else {
-			data = blog.getData().substring(0, 30);
+			data = blog.getDatanohtml().substring(0, 30) + "...";
 		}
 		title = blog.getTitle();
 		image = blog.getImage();

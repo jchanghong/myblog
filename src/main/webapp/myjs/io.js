@@ -1,10 +1,11 @@
 
-function postblog(title, data) {
+function postblog(title, data,nohtml) {
     var blog = {
         id: 0,
         complete: 1,
         createtime: 1111111,
         data: data,
+        datanohtml: nohtml,
         image: "1",
         title: title,
         updatetime: 44444444

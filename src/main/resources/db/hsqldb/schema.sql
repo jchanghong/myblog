@@ -11,6 +11,7 @@ CREATE TABLE blog (
   title varchar(50) NOT NULL,
   image varchar(50) NOT NULL,
   data VARCHAR(2014) NOT NULL,
+  datanohtml VARCHAR(2014) NOT NULL,
   createtime datetime NOT NULL,
   updatetime datetime NOT NULL,
   complete tinyint NOT NULL 
