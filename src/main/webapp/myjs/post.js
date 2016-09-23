@@ -58,7 +58,7 @@ function mydown()
     // alert("sum"+sum+"id"+isss);
      var sum=sessionStorage.getItem("sum");
     var isss=sessionStorage.getItem("id");
-    if(isss+1<=sum)
+    if(Number(isss)+1<=sum)
     {
 
   
