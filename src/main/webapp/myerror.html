@@ -11,21 +11,10 @@
 
     <title>长宏的个人网站</title>
 
-    <!-- jQuery -->
+
+ <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="myjs/post.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
-
-
+    <script src="myjs/error.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,8 +25,7 @@
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,7 +33,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 
 </head>
 
@@ -58,9 +45,9 @@
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
-                    Menu <i class="fa fa-bars"></i>
+                    目录 <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">个人网站</a>
+                <a class="navbar-brand" href="index.html">个人日记</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -69,11 +56,9 @@
                     <li>
                         <a href="index.html">主页</a>
                     </li>
-                    <li>
-                        <a href="about.html">关于</a>
-                    </li>
-                    <li>
-                        <a href="editor.html">写日志</a>
+
+                      <li>
+                        <a href="editor.html">写日记</a>
                     </li>
                     <li>
                         <a href="message.html">留言板</a>
@@ -87,44 +72,30 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/post-bg.jpg')" id="myimagebg">
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <!--<h1 id="title">title</h1>-->
-                        <!--<h2 id="subtitle">subtitle</h2>-->
-                        <!--<span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>-->
+                    <div class="site-heading">
+                        <h1>我的日记本</h1>
+                        <hr class="small">
+                        <span class="subheading">一个coder的学习过程</span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Post Content -->
-    <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="data">
-
-
-                </div>
-                <div class="col-xs-2 col-md-7" id="ddata">
-                    <span></span>
-                </div>
-                <div class="col-xs-10 col-md-5" id="ddata">
-
-
-  <a href="update.html" id="myupdate">更新</a>
-                    <a href="" id="mydown">下一个</a>
-                    <a href="" id="myup">上一个</a>
-                  
-                </div>
-
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <h1 style= "white-space: normal; text-align: center; ">sorry！！！有些不好的事情发生了<img src= "http://img.baidu.com/hi/jx2/j_0017.gif "/>
+              
+              <h3 id="myerror"></h3>
             </div>
         </div>
-
-    </article>
+    </div>
 
     <hr>
 
@@ -133,15 +104,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
+                    
                     <p class="copyright text-muted">Copyright &copy; changhong 2016</p>
                 </div>
             </div>
         </div>
     </footer>
 
+   
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- Contact Form JavaScript -->
+    <!--<script src="js/jqBootstrapValidation.js"></script>-->
+    <!--<script src="js/contact_me.js"></script>-->
 
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
 
 </body>
 

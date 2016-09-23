@@ -26,7 +26,7 @@ import changhong.com.util.StaticImageurl;
 @RestController
 public class BlogController {
 
-	public static int blogid = -1;
+	public static int blogid = 0;
 	BlogServerce server;
 
 	@RequestMapping(value = "blogs/number/sum")
@@ -39,7 +39,7 @@ public class BlogController {
 	public List<SimpleBlog> blognumbers10(@PathVariable int start) {
 		System.out.println("stat is" + start);
 		List<SimpleBlog> all = server.findbloglist();
-		long sum = server.blogcounts();
+		long sum = all.size();
 		if (start + 10 > sum) {
 			return all.subList(start, (int) sum);
 		} else {
@@ -57,7 +57,7 @@ public class BlogController {
 		super();
 		this.server = server;
 		List<Blog> list = server.findallblog();
-		BlogController.blogid = list.stream().mapToInt(a -> a.getId()).max().orElse(-1);
+		BlogController.blogid = list.stream().mapToInt(a -> a.getId()).max().orElse(0);
 	}
 
 	@RequestMapping(value = "/blogs/{text}", method = RequestMethod.GET)
@@ -75,8 +75,19 @@ public class BlogController {
 	public Blog getallblogup(@PathVariable int id) {
 		System.out.println("id is:" + id);
 		Blog blog = server.findblogbyid(id);
-		while (blog == null && id >= 0) {
+		while (blog == null && id >= 1) {
 			blog = server.findblogbyid(id--);
+		}
+		if (blog == null) {
+			id = (int) server.blogcounts();
+			while (blog == null && id >= 1) {
+				blog = server.findblogbyid(id--);
+			}
+
+		}
+		if (blog == null) {
+			blog = new Blog();
+
 		}
 		return blog;
 	}
@@ -85,12 +96,23 @@ public class BlogController {
 	public Blog getallblogdown(@PathVariable int id) {
 		System.out.println("id is:" + id);
 		Blog blog = server.findblogbyid(id);
-		long sum = server.blogcounts();
-		while (blog == null && id < sum) {
+		long sum = 0;
+		if (blog == null) {
+
+			sum = server.blogcounts();
+		}
+		while (blog == null && id <= sum) {
 			blog = server.findblogbyid(id++);
 		}
 		if (blog == null) {
-			blog = getallblogdown(0);
+			id = 1;
+			while (blog == null && id <= sum) {
+				blog = server.findblogbyid(id++);
+			}
+		}
+		if (blog == null) {
+			blog = new Blog();
+
 		}
 		return blog;
 	}
@@ -114,6 +136,35 @@ public class BlogController {
 			server.saveblog(blog);
 		}
 		return blog;
+
+	}
+
+	@RequestMapping(value = "/blog/update", method = RequestMethod.POST)
+	public Blog updatesblog(@RequestBody Blog blog, BindingResult bResult) {
+		// System.out.println(string + "------------------------------------");
+		// Blog blog = new Blog();
+		Blog up = blog;
+		if (bResult.hasErrors()) {
+			System.out.println(bResult.getAllErrors());
+			return new Blog();
+			// throw new RuntimeException(bResult.getAllErrors().toString());
+		} else {
+			// blog.setData(data);
+			up = server.findblogbyid(blog.getId());
+			up.setDatanohtml(blog.getDatanohtml());
+			up.setData(blog.getData());
+			// up.setCreatetime(new Date());
+			up.setTitle(blog.getTitle());
+			// up.setComplete((byte) 1);
+			up.setUpdatetime(new Date());
+			// if (blog.getImage().length() < 6) {
+			//
+			// up.setImage(StaticImageurl.getaurl());
+			//
+			// }
+			server.saveblog(up);
+		}
+		return up;
 
 	}
 

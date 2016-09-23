@@ -22,7 +22,7 @@ import changhong.com.serverce.BlogServerce;
  */
 @RestController
 public class UserControll {
-	public static int userid = 1;
+	public static int userid = 0;
 	BlogServerce server;
 
 	/**
@@ -33,13 +33,13 @@ public class UserControll {
 		super();
 		this.server = server;
 		List<User> list = server.findalluser();
-		UserControll.userid = list.stream().mapToInt(a -> a.getId()).max().orElse(1);
+		UserControll.userid = list.stream().mapToInt(a -> a.getId()).max().orElse(0);
 	}
 
 	@RequestMapping(value = "/user/new", method = RequestMethod.POST)
 	public User saveblog(@RequestBody User user) {
 		if (user.getId() < 1) {
-			user.setId(UserControll.userid++);
+			user.setId(++UserControll.userid);
 			user.setLogintime(new Date());
 		}
 		server.save(user);
@@ -50,7 +50,7 @@ public class UserControll {
 	public User saveblognew() {
 		User user = new User();
 		if (user.getId() < 1) {
-			user.setId(UserControll.userid++);
+			user.setId(++UserControll.userid);
 
 		}
 		return user;

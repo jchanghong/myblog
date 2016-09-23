@@ -5,6 +5,6 @@ $(document).ready(function () {
     var data = UE.getEditor('editor').getContent();
     var nohtml=UE.getEditor('editor').getContentTxt();
     postblog(title,data,nohtml);
-      // location.assign("http://60.205.188.25/post.html");
+      // location.assign("http://localhost:8080/myblog/post.html");
     });
 });

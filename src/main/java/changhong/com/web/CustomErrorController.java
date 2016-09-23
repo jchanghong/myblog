@@ -16,21 +16,65 @@
 
 package changhong.com.web;
 
+import java.util.Map;
+
+import org.springframework.boot.autoconfigure.web.ErrorAttributes;
+import org.springframework.boot.autoconfigure.web.ErrorController;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.context.request.RequestAttributes;
 
 @Controller
-public class CustomErrorController
-// implements ErrorController
+public class CustomErrorController implements ErrorController, ErrorAttributes
 
 {
+	public static String errstring = "";
 
-	// @RequestMapping(value = "/error")
-	public String error() {
-		return "exception";
+	@RequestMapping(value = "/error")
+	public String error(Model model) {
+		CustomErrorController.errstring = model.toString();
+		// CustomErrorController.errstring = exception.getMessage() + "<br>" +
+		// exception.getStackTrace();
+		return "myerror.html";
 	}
 
-	// @Override
-	// public String getErrorPath() {
-	// return "/error";
-	// }
+	@ResponseBody
+	@RequestMapping(value = "/geterror/")
+	public String geterrmesage() {
+		return CustomErrorController.errstring;
+	}
+
+	@Override
+	public String getErrorPath() {
+		return "/error";
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.springframework.boot.autoconfigure.web.ErrorAttributes#getError(org.
+	 * springframework.web.context.request.RequestAttributes)
+	 */
+	@Override
+	public Throwable getError(RequestAttributes arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.springframework.boot.autoconfigure.web.ErrorAttributes#
+	 * getErrorAttributes(org.springframework.web.context.request.
+	 * RequestAttributes, boolean)
+	 */
+	@Override
+	public Map<String, Object> getErrorAttributes(RequestAttributes arg0, boolean arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

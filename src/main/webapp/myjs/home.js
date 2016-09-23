@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    $.get("http://60.205.188.25/blogs/number/sum",
+    $.get("http://localhost:8080/myblog/blogs/number/sum",
         function (data, status) {
             sessionStorage.setItem("sum", Number(data));
             sessionStorage.setItem("start", 0);
@@ -39,7 +39,7 @@ $(document).ready(function () {
 
     // $("a#more").click(function (e) { 
     //     alert("more");
-    //      location.assign("http://60.205.188.25/post.html");
+    //      location.assign("http://localhost:8080/myblog/post.html");
     // });
 
 });
@@ -75,7 +75,7 @@ function serch() {
         var text = document.getElementById("myserch").value;
         if (sessionStorage.getItem("serchtext") == text) return;
         sessionStorage.setItem("serchtext", text);
-        var ourl = "http://60.205.188.25/blogs/" + text;
+        var ourl = "http://localhost:8080/myblog/blogs/" + text;
 
         // var urls = encodeURI(ourl);
         // alert(encodeURI(ourl));
@@ -140,7 +140,7 @@ function bb() {
 }
 function aa(start) {
 
-    $.get("http://60.205.188.25/blogs/get10/0",
+    $.get("http://localhost:8080/myblog/blogs/get10/0",
         function (data, status) {
             var bloss = "";
             for (var index = 0; index < data.length; index++) {
@@ -182,7 +182,7 @@ function getbloghtml(blog) {
 
 function geturlfor_blog(blogid) {
     return '<a href="' +
-        'http://60.205.188.25/post.html"' + '  title="' + blogid + '"' + '" class="portfolio-box" >';
+        'http://localhost:8080/myblog/post.html"' + '  title="' + blogid + '"' + '" class="portfolio-box" >';
 }
 
 function moredown() {
@@ -194,7 +194,7 @@ function moredown() {
 
     var text = sessionStorage.getItem("start");
 
-    var ourl = "http://60.205.188.25/blogs/get10/" + text;
+    var ourl = "http://localhost:8080/myblog/blogs/get10/" + text;
 
     // var urls = encodeURI(ourl);
     // alert(encodeURI(ourl));
@@ -231,7 +231,7 @@ function moreup() {
 
     var text = sessionStorage.getItem("start");
 
-    var ourl = "http://60.205.188.25/blogs/get10/" + text;
+    var ourl = "http://localhost:8080/myblog/blogs/get10/" + text;
 
 
     // var urls = encodeURI(ourl);
@@ -267,12 +267,12 @@ function getbloghtml22(blog) {
       var dates=new Date(blog["Updatetime"]);
     var html = "";
     html += '<div class="col-xs-12 col-md-6 aaaaaaaaaa post-preview">';
-    html+=' <a href="http://60.205.188.25/post.html" class="myaaaaa2" ';
+    html+=' <a href="http://localhost:8080/myblog/post.html" class="myaaaaa2" ';
     html+=' title="'+blog["id"]+'" >';
     html += '<div class="panel panel-default">';
     html+='  <img src=';
     html += '"'+blog["image"]+'"';
-    html += '  class="img-responsive" alt="图片">';
+    html += '  class="img-responsive"  widht="400" height="255"  alt="图片">';
     html += '<div class="panel-body ">';
     html += ' <h2 class="post-title">';
     html += blog["title"];
