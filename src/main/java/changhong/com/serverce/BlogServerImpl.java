@@ -5,6 +5,8 @@ package changhong.com.serverce;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -225,20 +227,27 @@ public class BlogServerImpl implements BlogServerce {
 		if (BlogServerImpl.serchtext.length() < 1) {
 			return true;
 		}
-		for (String string : BlogServerImpl.serchtext.trim().split("\\s+")) {
-			System.out.println(string);
-			if (string.length() < 1) {
-				continue;
-			}
-			if (!nodata.getTitle().contains(string)) {
-				return false;
-			}
-			if (!nodata.getDatanohtml().contains(string)) {
-				return false;
-			}
+		BlogServerImpl.serchtext = BlogServerImpl.serchtext.replaceAll("\\s+", "\\s+");
+		// String[] strings = BlogServerImpl.serchtext.split("\\s+");
+		// StringBuilder builder = new StringBuilder();
+		// Arrays.stream(strings).forEach(aa -> {
+		// builder.append("\\s*").append(aa).append("\\s+");
+		// });
+		// String mString = builder.substring(0, builder.length() -
+		// 4).toString();
+		System.out.println("rege string is: " + BlogServerImpl.serchtext);
+		Pattern pattern = Pattern.compile(BlogServerImpl.serchtext, Pattern.UNICODE_CASE);
+		Matcher matcher = pattern.matcher(nodata.getTitle());
+		if (matcher.find()) {
+			return true;
 
 		}
-		return true;
+		matcher = pattern.matcher(nodata.getData());
+		if (matcher.find()) {
+			return true;
+
+		}
+		return false;
 	}
 
 	/*

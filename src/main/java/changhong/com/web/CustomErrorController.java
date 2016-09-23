@@ -16,65 +16,79 @@
 
 package changhong.com.web;
 
+import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.boot.autoconfigure.web.AbstractErrorController;
 import org.springframework.boot.autoconfigure.web.ErrorAttributes;
-import org.springframework.boot.autoconfigure.web.ErrorController;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class CustomErrorController implements ErrorController, ErrorAttributes
+public class CustomErrorController extends AbstractErrorController
 
 {
-	public static String errstring = "";
+	Map<String, Object> model = new
+
+	HashMap<>();
+
+	/**
+	 * @param errorAttributes
+	 */
+	public CustomErrorController(ErrorAttributes errorAttributes) {
+		super(errorAttributes);
+		// TODO Auto-generated constructor stub
+	}
 
 	@RequestMapping(value = "/error")
-	public String error(Model model) {
-		CustomErrorController.errstring = model.toString();
-		// CustomErrorController.errstring = exception.getMessage() + "<br>" +
-		// exception.getStackTrace();
+	public String error(HttpServletRequest request) {
+		this.model = getErrorAttributes(request, true);
 		return "myerror.html";
 	}
 
 	@ResponseBody
-	@RequestMapping(value = "/geterror/")
-	public String geterrmesage() {
-		return CustomErrorController.errstring;
+	@RequestMapping(value = "/geterrormap")
+	public Map<String, Object> geterrmesage() {
+
+		return model;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 *
+	 * @see org.springframework.boot.autoconfigure.web.AbstractErrorController#
+	 * getErrorAttributes(javax.servlet.http.HttpServletRequest, boolean)
+	 */
+	@Override
+	protected Map<String, Object> getErrorAttributes(HttpServletRequest request, boolean includeStackTrace) {
+		// TODO Auto-generated method stub
+		return super.getErrorAttributes(request, includeStackTrace);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 *
+	 * @see org.springframework.boot.autoconfigure.web.AbstractErrorController#
+	 * resolveErrorView(javax.servlet.http.HttpServletRequest,
+	 * javax.servlet.http.HttpServletResponse,
+	 * org.springframework.http.HttpStatus, java.util.Map)
+	 */
+	@Override
+	protected ModelAndView resolveErrorView(HttpServletRequest request, HttpServletResponse response, HttpStatus status,
+			Map<String, Object> model) {
+		this.model = model;
+		// TODO Auto-generated method stub
+		return super.resolveErrorView(request, response, status, model);
 	}
 
 	@Override
 	public String getErrorPath() {
 		return "/error";
 	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * org.springframework.boot.autoconfigure.web.ErrorAttributes#getError(org.
-	 * springframework.web.context.request.RequestAttributes)
-	 */
-	@Override
-	public Throwable getError(RequestAttributes arg0) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see org.springframework.boot.autoconfigure.web.ErrorAttributes#
-	 * getErrorAttributes(org.springframework.web.context.request.
-	 * RequestAttributes, boolean)
-	 */
-	@Override
-	public Map<String, Object> getErrorAttributes(RequestAttributes arg0, boolean arg1) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }

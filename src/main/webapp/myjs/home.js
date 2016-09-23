@@ -159,7 +159,7 @@ function getbloghtml(blog) {
 
     var dates=new Date(blog["Updatetime"]);
     var html = "";
-    html += '<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 aaaaaaaaaa"  >';
+    html += '<div class="col-lg-12  col-sm-12 col-xs-12 aaaaaaaaaa"  >';
     html += geturlfor_blog(blog["id"]);
     html += ' <img src="' + blog["image"] + '" class="img-responsive" alt="" >';
     html += ' <h2 class="post-title itemtext" >';
