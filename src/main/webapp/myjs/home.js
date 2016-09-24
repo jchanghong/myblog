@@ -266,7 +266,8 @@ function moreup() {
 function getbloghtml22(blog) {
       var dates=new Date(blog["Updatetime"]);
     var html = "";
-    html += '<div class="col-xs-12 col-md-6 aaaaaaaaaa post-preview">';
+    // html+=' <div class="col-xs-0 col-md-4" id="ddat11a" >  <span></span>  </div>';
+    html += '<div class="col-xs-12 col-md-6 aaaaaaaaaa pa3nel panel-bo3dy post-preview">';
     html+=' <a href="http://localhost:8080/myblog/post.html" class="myaaaaa2" ';
     html+=' title="'+blog["id"]+'" >';
     html += '<div class="panel panel-default">';
