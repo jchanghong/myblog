@@ -11,6 +11,7 @@ import changhong.com.entity.Blog;
 import changhong.com.entity.Image;
 import changhong.com.entity.Message;
 import changhong.com.entity.SimpleBlog;
+import changhong.com.entity.Types;
 import changhong.com.entity.User;
 import changhong.com.reposity.Userpasswordandname;
 
@@ -19,6 +20,9 @@ import changhong.com.reposity.Userpasswordandname;
  *
  */
 public interface BlogServerce {
+	List<Types> getalltypes() throws DataAccessException;
+
+	void addtypes(Types types) throws DataAccessException;
 
 	// mesage
 	void addmessage(Message message) throws DataAccessException;

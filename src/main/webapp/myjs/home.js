@@ -1,12 +1,21 @@
 
 $(document).ready(function () {
-    $.get("http://localhost:8080/myblog/blogs/number/sum",
+    $.get("http://localhost:8080/myblog/types",
+        function (data, status) {
+            data.forEach(function(element) {
+             $("ul#mytypes").append("<li>"+element["name"]+"</li>");
+           });
+        }
+    );
+
+ $.get("http://localhost:8080/myblog/blogs/number/sum",
         function (data, status) {
             sessionStorage.setItem("sum", Number(data));
             sessionStorage.setItem("start", 0);
             setmorebutton();
         }
     );
+
 
     aa();
     $("button#mymoreup").click(function (e) {

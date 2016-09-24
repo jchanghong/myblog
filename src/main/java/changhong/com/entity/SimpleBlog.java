@@ -16,6 +16,7 @@ public class SimpleBlog implements Serializable {
 	public String data;
 	public String title;
 	public String image;
+	public String types;
 	public Date Updatetime;
 	public int complete;
 
@@ -31,6 +32,7 @@ public class SimpleBlog implements Serializable {
 			data = blog.getDatanohtml().substring(0, 10) + "   more...";
 		}
 		title = blog.getTitle();
+		types = blog.getTypes();
 		image = blog.getImage();
 		Updatetime = blog.getUpdatetime();
 		complete = blog.getComplete();

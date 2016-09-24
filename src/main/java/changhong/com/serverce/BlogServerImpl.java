@@ -19,10 +19,12 @@ import changhong.com.entity.Blog;
 import changhong.com.entity.Image;
 import changhong.com.entity.Message;
 import changhong.com.entity.SimpleBlog;
+import changhong.com.entity.Types;
 import changhong.com.entity.User;
 import changhong.com.reposity.BlogRepository;
 import changhong.com.reposity.ImageRepository;
 import changhong.com.reposity.MessageRepository;
+import changhong.com.reposity.TypesRrpository;
 import changhong.com.reposity.UserRepository;
 import changhong.com.reposity.Userpasswordandname;
 
@@ -35,6 +37,8 @@ public class BlogServerImpl implements BlogServerce {
 
 	@Autowired
 	MessageRepository messageRepository1;
+	@Autowired
+	TypesRrpository typesRrpository;
 	BlogRepository blogRepository;
 	UserRepository UserRepository1;
 	ImageRepository ImageRepository1;
@@ -284,6 +288,32 @@ public class BlogServerImpl implements BlogServerce {
 	public long blogcounts() throws DataAccessException {
 		// TODO Auto-generated method stub
 		return blogRepository.count();
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see changhong.com.serverce.BlogServerce#getalltypes()
+	 */
+	@Override
+	public List<Types> getalltypes() throws DataAccessException {
+		// TODO Auto-generated method stub
+		List<Types> list = new ArrayList<>();
+		typesRrpository.findAll().forEach(aa -> list.add(aa));
+
+		return list;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * changhong.com.serverce.BlogServerce#addtypes(changhong.com.entity.Types)
+	 */
+	@Override
+	public void addtypes(Types types) throws DataAccessException {
+		// TODO Auto-generated method stub
+		typesRrpository.save(types);
 	}
 
 }

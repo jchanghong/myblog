@@ -60,6 +60,23 @@ public class Blog implements Serializable {
 	private String title;
 	@Column(nullable = false, length = 255)
 	private String image;
+	@Column(nullable = false, length = 255)
+	private String types;
+
+	/**
+	 * @return the types
+	 */
+	public String getTypes() {
+		return this.types;
+	}
+
+	/**
+	 * @param types
+	 *            the types to set
+	 */
+	public void setTypes(String types) {
+		this.types = types;
+	}
 
 	/**
 	 * @return the image

@@ -6,9 +6,14 @@ CREATE TABLE message (
   time datetime NOT NULL
 );
 
+CREATE TABLE types (
+  id int NOT NULL PRIMARY KEY ,
+  name varchar(255) NOT NULL
+);
 CREATE TABLE blog (
   id int NOT NULL PRIMARY KEY,
   title varchar(50) NOT NULL,
+  types varchar(50) NOT NULL,
   image varchar(50) NOT NULL,
   data VARCHAR(2014) NOT NULL,
   datanohtml VARCHAR(2014) NOT NULL,

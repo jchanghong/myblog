@@ -1,5 +1,5 @@
 
-function postblog(title, data,nohtml) {
+function postblog(title, data,nohtml,types) {
     var blog = {
         id: 0,
         complete: 1,
@@ -8,6 +8,7 @@ function postblog(title, data,nohtml) {
         datanohtml: nohtml,
         image: "1",
         title: title,
+        types: types,
         updatetime: 44444444
     };
     $.ajax({

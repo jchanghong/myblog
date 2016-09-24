@@ -21,6 +21,10 @@ CHARACTER SET utf8
 COLLATE utf8_general_ci
 ROW_FORMAT = DYNAMIC;
 
+CREATE TABLE types (
+  id int NOT NULL PRIMARY KEY ,
+  name varchar(255) NOT NULL
+);
 
 --DROP TABLE if EXISTS blog;
 
@@ -29,6 +33,7 @@ CREATE TABLE if not exists blog (
 --  AUTO_INCREMENT
   ,
   title varchar(255) NOT NULL,
+  types varchar(255) NOT NULL,
    image varchar(50) NOT NULL,
   data text NOT NULL,
    datanohtml text NOT NULL,
