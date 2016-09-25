@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // alert("red");
-    $.get("http://localhost:8080/myblog/geterrormap",
+    $.get("http://60.205.188.25/geterrormap",
         function (data, status) {
             var htmps="<p>"+data["exception"]+"<br>"+data["message"]+"<br>"+data["trace"]+"</p>";
             // alert(htmps);
