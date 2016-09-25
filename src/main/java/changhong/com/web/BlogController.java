@@ -3,8 +3,11 @@
  */
 package changhong.com.web;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
@@ -66,9 +69,34 @@ public class BlogController {
 		return server.serch(text);
 	}
 
+	@RequestMapping(value = "/blogs/type/{type}", method = RequestMethod.GET)
+	public List<SimpleBlog> serchblogtype(@PathVariable String type) {
+		System.out.println("type text is:" + type);
+		int i = type.indexOf("(");
+		if (i != -1) {
+			type = type.substring(0, i);
+
+		}
+		return server.getalltypesbytype(type);
+	}
+
 	@RequestMapping(value = "/blogs", method = RequestMethod.GET)
 	public List<SimpleBlog> getallblog() {
 		return server.findbloglist();
+	}
+
+	// key(3)
+	@RequestMapping(value = "/blog/typenumber/map", method = RequestMethod.GET)
+	public List<String> getallblogmap() {
+		List<String> list = new ArrayList<>();
+		List<SimpleBlog> simpleBlogs = server.findbloglist();
+		Map<String, List<SimpleBlog>> maps = simpleBlogs.stream().collect(Collectors.groupingBy(SimpleBlog::getTypes));
+
+		for (String key : maps.keySet()) {
+			list.add(key + "(" + maps.get(key).size() + ")");
+		}
+		return list;
+
 	}
 
 	@RequestMapping(value = "/blog/show/orup/{id}", method = RequestMethod.GET)

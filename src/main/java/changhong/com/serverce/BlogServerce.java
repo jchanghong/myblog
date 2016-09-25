@@ -22,6 +22,8 @@ import changhong.com.reposity.Userpasswordandname;
 public interface BlogServerce {
 	List<Types> getalltypes() throws DataAccessException;
 
+	List<SimpleBlog> getalltypesbytype(String types) throws DataAccessException;
+
 	void addtypes(Types types) throws DataAccessException;
 
 	// mesage

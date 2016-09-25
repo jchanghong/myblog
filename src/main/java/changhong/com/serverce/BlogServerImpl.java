@@ -292,7 +292,7 @@ public class BlogServerImpl implements BlogServerce {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see changhong.com.serverce.BlogServerce#getalltypes()
 	 */
 	@Override
@@ -306,7 +306,7 @@ public class BlogServerImpl implements BlogServerce {
 
 	/*
 	 * (non-Javadoc)
-	 * 
+	 *
 	 * @see
 	 * changhong.com.serverce.BlogServerce#addtypes(changhong.com.entity.Types)
 	 */
@@ -314,6 +314,22 @@ public class BlogServerImpl implements BlogServerce {
 	public void addtypes(Types types) throws DataAccessException {
 		// TODO Auto-generated method stub
 		typesRrpository.save(types);
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * changhong.com.serverce.BlogServerce#getalltypesbytype(java.lang.String)
+	 */
+	@Override
+	public List<SimpleBlog> getalltypesbytype(String types) throws DataAccessException {
+		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+		List<SimpleBlog> simpleBlogs = new ArrayList<>();
+		Iterable<Blog> lis = blogRepository.findByTypes(types);
+		lis.forEach(aa -> simpleBlogs.add(new SimpleBlog(aa)));
+		return simpleBlogs;
 	}
 
 }

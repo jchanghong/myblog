@@ -1,10 +1,22 @@
 
 $(document).ready(function () {
-    $.get("http://localhost:8080/myblog/types",
+    $.get("http://localhost:8080/myblog//blog/typenumber/map",
         function (data, status) {
             data.forEach(function(element) {
-             $("ul#mytypes").append("<li>"+element["name"]+"</li>");
+             
+             $("ul#mytypes").append("<li>"+'<a  class="aaaaaaaaaa1"   title="'+element+'" >'+element+'</a>'+"</li>");
            });
+          $("a.aaaaaaaaaa1").each(function (index, element) {
+              // element == this
+             $(element).click(function (e) { 
+                
+                   var id = $(element).attr("title");
+                   getlist_type(id);
+            // alert(id);
+          
+             });
+          });
+            // $('#side-menu').metisMenu();
         }
     );
 
@@ -299,4 +311,30 @@ function getbloghtml22(blog) {
     html += '  </div>';
     html += ' </div></div>';
     return html;
+}
+function getlist_type(id)
+{
+
+var ourl="http://localhost:8080/myblog/blogs/type/"+id;
+    
+        $.get(encodeURI(ourl),
+            function (data, status) {
+                // alert(data);
+                $(".aaaaaaaaaa").remove();
+                var bloss = "";
+                for (var index = 0; index < data.length; index++) {
+                    var element = data[index];
+                    bloss += getbloghtml22(element);
+                }
+                // $("#mylist").append(bloss);
+                $("#mylist").before(bloss);
+                bb();
+
+
+
+
+
+            }
+        );
+
 }
