@@ -1,5 +1,5 @@
 function initupdate() {
- $.get("http://60.205.188.25/types",
+ $.get("http://ljx520.cn/types",
         function (data, status) {
             //   alert(typeof UE.getEditor('editor');
            data.forEach(function(element) {
@@ -15,7 +15,7 @@ function initupdate() {
         sessionStorage.setItem("id", id);
     }
 
-    $.get("http://60.205.188.25/blog/show/ordown/" + id,
+    $.get("http://ljx520.cn/blog/show/ordown/" + id,
         function (data, status) {
             //   alert(typeof UE.getEditor('editor');
   $("select#mytypes").val(data["types"]);
@@ -32,7 +32,7 @@ function initupdate() {
         var nohtml = UE.getEditor('editor').getContentTxt();
 
         postblogupdate(id, title, data, nohtml,types);
-        // location.assign("http://60.205.188.25/post.html");
+        // location.assign("http://ljx520.cn/post.html");
     });
 
 
@@ -45,7 +45,7 @@ function initupdate() {
        $.ajax({
         type: "POST",
         cache: false,
-        url: "http://60.205.188.25/type/new",
+        url: "http://ljx520.cn/type/new",
         data: JSON.stringify(data),
         Accept: "application/json",
         contentType: "application/json; charset=utf-8",
@@ -54,7 +54,7 @@ function initupdate() {
              $("select#mytypes").append("<option>"+data["name"]+"</option>");
             // alert("成功！！！"+result["id"]+status);
             // sessionStorage.setItem("id",result["id"]);
-              // location.assign("http://60.205.188.25/post.html");
+              // location.assign("http://ljx520.cn/post.html");
         },
         error: function (xhr, status, error) {
             alert("失败！！！"+status+error);
@@ -80,7 +80,7 @@ function postblogupdate(id, title, data, nohtml,types) {
     $.ajax({
         type: "POST",
         cache: false,
-        url: "http://60.205.188.25/blog/update",
+        url: "http://ljx520.cn/blog/update",
         data: JSON.stringify(blog),
         Accept: "application/json",
         contentType: "application/json; charset=utf-8",
@@ -88,7 +88,7 @@ function postblogupdate(id, title, data, nohtml,types) {
         success: function (result, status, xhr) {
             // alert("成功！！！"+result["id"]+status);
             // sessionStorage.setItem("id",result["id"]);
-            location.assign("http://60.205.188.25/post.html");
+            location.assign("http://ljx520.cn/post.html");
         },
         error: function (xhr, status, error) {
             alert("失败！！！" + status + error);

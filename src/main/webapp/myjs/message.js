@@ -1,5 +1,5 @@
 function myinit() {
-    $.get("http://60.205.188.25/messages",
+    $.get("http://ljx520.cn/messages",
         function (data, status) {
             var bloss = "";
             for (var index = 0; index < data.length; index++) {
@@ -61,7 +61,7 @@ function postmessage(u) {
     $.ajax({
         type: "POST",
         cache: false,
-        url: "http://60.205.188.25/message/new",
+        url: "http://ljx520.cn/message/new",
         data: u,
         Accept: "application/json",
         contentType: "application/json; charset=utf-8",

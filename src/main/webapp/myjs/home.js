@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    $.get("http://60.205.188.25//blog/typenumber/map",
+    $.get("http://ljx520.cn//blog/typenumber/map",
         function (data, status) {
             data.forEach(function(element) {
              
@@ -20,7 +20,7 @@ $(document).ready(function () {
         }
     );
 
- $.get("http://60.205.188.25/blogs/number/sum",
+ $.get("http://ljx520.cn/blogs/number/sum",
         function (data, status) {
             sessionStorage.setItem("sum", Number(data));
             sessionStorage.setItem("start", 0);
@@ -60,7 +60,7 @@ $(document).ready(function () {
 
     // $("a#more").click(function (e) { 
     //     alert("more");
-    //      location.assign("http://60.205.188.25/post.html");
+    //      location.assign("http://ljx520.cn/post.html");
     // });
 
 });
@@ -96,7 +96,7 @@ function serch() {
         var text = document.getElementById("myserch").value;
         if (sessionStorage.getItem("serchtext") == text) return;
         sessionStorage.setItem("serchtext", text);
-        var ourl = "http://60.205.188.25/blogs/" + text;
+        var ourl = "http://ljx520.cn/blogs/" + text;
 
         // var urls = encodeURI(ourl);
         // alert(encodeURI(ourl));
@@ -161,7 +161,7 @@ function bb() {
 }
 function aa(start) {
 
-    $.get("http://60.205.188.25/blogs/get10/0",
+    $.get("http://ljx520.cn/blogs/get10/0",
         function (data, status) {
             var bloss = "";
             for (var index = 0; index < data.length; index++) {
@@ -203,7 +203,7 @@ function getbloghtml(blog) {
 
 function geturlfor_blog(blogid) {
     return '<a href="' +
-        'http://60.205.188.25/post.html"' + '  title="' + blogid + '"' + '" class="portfolio-box" >';
+        'http://ljx520.cn/post.html"' + '  title="' + blogid + '"' + '" class="portfolio-box" >';
 }
 
 function moredown() {
@@ -215,7 +215,7 @@ function moredown() {
 
     var text = sessionStorage.getItem("start");
 
-    var ourl = "http://60.205.188.25/blogs/get10/" + text;
+    var ourl = "http://ljx520.cn/blogs/get10/" + text;
 
     // var urls = encodeURI(ourl);
     // alert(encodeURI(ourl));
@@ -252,7 +252,7 @@ function moreup() {
 
     var text = sessionStorage.getItem("start");
 
-    var ourl = "http://60.205.188.25/blogs/get10/" + text;
+    var ourl = "http://ljx520.cn/blogs/get10/" + text;
 
 
     // var urls = encodeURI(ourl);
@@ -289,7 +289,7 @@ function getbloghtml22(blog) {
     var html = "";
     // html+=' <div class="col-xs-0 col-md-4" id="ddat11a" >  <span></span>  </div>';
     html += '<div class="col-xs-12 col-md-6 aaaaaaaaaa pa3nel panel-bo3dy post-preview">';
-    html+=' <a href="http://60.205.188.25/post.html" class="myaaaaa2" ';
+    html+=' <a href="http://ljx520.cn/post.html" class="myaaaaa2" ';
     html+=' title="'+blog["id"]+'" >';
     html += '<div class="panel panel-default">';
     html+='  <img src=';
@@ -315,7 +315,7 @@ function getbloghtml22(blog) {
 function getlist_type(id)
 {
 
-var ourl="http://60.205.188.25/blogs/type/"+id;
+var ourl="http://ljx520.cn/blogs/type/"+id;
     
         $.get(encodeURI(ourl),
             function (data, status) {

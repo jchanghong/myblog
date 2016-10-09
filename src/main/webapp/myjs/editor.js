@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // alert("ready");
-  $.get("http://60.205.188.25/types",
+  $.get("http://ljx520.cn/types",
         function (data, status) {
             //   alert(typeof UE.getEditor('editor');
            data.forEach(function(element) {
@@ -15,7 +15,7 @@ $(document).ready(function () {
     var data = UE.getEditor('editor').getContent();
     var nohtml=UE.getEditor('editor').getContentTxt();
     postblog(title,data,nohtml,types);
-      // location.assign("http://60.205.188.25/post.html");
+      // location.assign("http://ljx520.cn/post.html");
     });
 
 
@@ -26,7 +26,7 @@ $(document).ready(function () {
        $.ajax({
         type: "POST",
         cache: false,
-        url: "http://60.205.188.25/type/new",
+        url: "http://ljx520.cn/type/new",
         data: JSON.stringify(data),
         Accept: "application/json",
         contentType: "application/json; charset=utf-8",
@@ -35,7 +35,7 @@ $(document).ready(function () {
              $("select#mytypes").append("<option>"+data["name"]+"</option>");
             // alert("成功！！！"+result["id"]+status);
             // sessionStorage.setItem("id",result["id"]);
-              // location.assign("http://60.205.188.25/post.html");
+              // location.assign("http://ljx520.cn/post.html");
         },
         error: function (xhr, status, error) {
             alert("失败！！！"+status+error);
