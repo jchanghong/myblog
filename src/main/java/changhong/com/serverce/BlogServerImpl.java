@@ -114,7 +114,7 @@ public class BlogServerImpl implements BlogServerce {
 	@Cacheable(value = "blogs")
 	public Blog findblogbyid(int id) throws DataAccessException {
 		// TODO Auto-generated method stub
-		return blogRepository.findOne(id);
+		return blogRepository.findById(id).get();
 	}
 
 	/*

@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.4.0.RELEASE'
+		springBootVersion = '2.0.0.M3'
 	}
 	repositories {
 		mavenCentral()
@@ -13,17 +13,12 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse-wtp'
-apply plugin: 'spring-boot'
-apply plugin: 'war'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
 
-
-war {
-	baseName = 'myblog'
-	version = '0.0.1-SNAPSHOT'
-}
+version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
-targetCompatibility = 1.8
 
 repositories {
 	mavenCentral()
@@ -31,31 +26,13 @@ repositories {
 	maven { url "https://repo.spring.io/milestone" }
 }
 
-configurations {
-	providedRuntime
-}
 
 dependencies {
-   // compile files('libs/a.jar', 'libs/b.jar')
-    compile fileTree(dir: 'src/lib', include: '*.jar')
-	//compile('org.springframework.boot:spring-boot-starter-aop')
+	compile fileTree(dir: 'src/lib')
 	compile('org.springframework.boot:spring-boot-starter-cache')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	
-	compile('org.springframework.boot:spring-boot-starter-jdbc')
-	//compile('org.springframework.boot:spring-boot-starter-security')
-	//compile('org.springframework.boot:spring-boot-starter-validation')
 	compile('org.springframework.boot:spring-boot-starter-web')
-	//compile('org.springframework.boot:spring-boot-starter-web-services')
-	//compile('org.springframework.boot:spring-boot-starter-websocket')
-	
-	compile('org.ehcache:ehcache')
-	compile('javax.cache:cache-api')
-	
-	
 	runtime('org.hsqldb:hsqldb')
 	runtime('mysql:mysql-connector-java')
-	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
 }
